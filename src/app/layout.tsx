@@ -10,8 +10,12 @@ export const metadata: Metadata = {
     template: '%s - Amit Mirgal',
     default: 'Amit Mirgal - Software Engineer, and entrepreneur',
   },
-  description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+  description: `I am a Software Engineer who is good at using JavaScript,
+    TypeScript, and React. For the past 8 years, I have been working
+    on creating software. I really like how technology can bring about
+    new and better ways of doing things. I always try to learn new
+    things and get the right qualifications to be a great Software
+    Developer in today's ever-changing tech world.`,
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

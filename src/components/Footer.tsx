@@ -2,6 +2,9 @@ import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
+/**
+ * The navigation links on the footer.
+ */
 function NavLink({
     href,
     children,
@@ -19,6 +22,9 @@ function NavLink({
     )
 }
 
+/**
+ * The footer used on all pages.
+ */
 export function Footer() {
     return (
         <footer className="mt-32 flex-none">
@@ -30,9 +36,7 @@ export function Footer() {
                                 <NavLink href="/">Home</NavLink>
                                 <NavLink href="/about">About</NavLink>
                                 <NavLink href="/career">Career</NavLink>
-                                {/* <NavLink href="/articles">Articles</NavLink> */}
                                 <NavLink href="/projects">Projects</NavLink>
-                                {/* <NavLink href="/uses">Uses</NavLink> */}
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
                                 &copy; {new Date().getFullYear()} Young Bryan Yu. All rights

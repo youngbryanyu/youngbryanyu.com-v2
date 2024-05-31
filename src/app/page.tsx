@@ -2,7 +2,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import { EmailIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import chicago1 from '@/images/home/chicago.jpg'
 import sedona from '@/images/home/sedona.jpg'
 import photography from '@/images/home/photography.jpg'
@@ -10,7 +10,7 @@ import alviso from '@/images/home/alviso.jpg'
 import oregon from '@/images/home/oregon.jpg'
 import React from 'react'
 import { SimpleSocialLink } from '@/components/SocialLinks'
-import { MailIcon, ResumeIcon } from '@/components/Icons'
+import { ResumeIcon } from '@/components/Icons'
 
 /**
  * The photos section.
@@ -50,12 +50,13 @@ export default async function Home() {
         <>
             <Container className="mt-9">
                 <div className="max-w-2xl">
+                    
                     {/* Title and introduction */}
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         Software engineer, photographer, and adventurer.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at Purdue University. I am based in San Francisco Bay Area. I&apos;m currently working at startup KeyByte LLC with Dr. Saurabh Bagchi and Dr. Somali Chaterji on some cutting edge database and VM tuning technologies.
+                        I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at Purdue University. I am based in San Francisco Bay Area. I&apos;m currently working at startup KeyByte LLC on some cutting edge database and VM tuning technologies.
                     </p>
 
                     {/* Social Links */}
@@ -73,7 +74,7 @@ export default async function Home() {
                         <SimpleSocialLink
                             href="mailto:youngyu19@gmail.com"
                             aria-label="Connect through email"
-                            icon={MailIcon}
+                            icon={EmailIcon}
                         />
                         <SimpleSocialLink
                             href="https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing"

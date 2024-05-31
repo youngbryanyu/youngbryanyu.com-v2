@@ -1,5 +1,8 @@
 import { useId } from 'react'
 
+/**
+ * A section (see the `speaking` page for what this looks like).
+ */
 export function Section({
   title,
   children,

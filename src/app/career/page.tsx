@@ -46,7 +46,6 @@ function Role({ role }: { role: Role }) {
     return (
         <li className="relative group transition rounded-lg -m-2">
             <Link href={role.link || '#'} target="_blank" rel="noopener noreferrer" className="block p-6 m-2">
-                <div className="absolute inset-0 z-0 transform scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 rounded-lg" />
                 <div className="relative z-10 flex gap-4 items-center">
 
                     {/* The company logo */}
@@ -202,19 +201,5 @@ export default function Career() {
                 </div>
             </Container>
         </>
-    )
-}
-
-// TODO: move to icon file
-function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-    return (
-        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-            <path
-                d="M6.75 5.75 9.25 8l-2.5 2.25"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-        </svg>
     )
 }

@@ -1,6 +1,9 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
+/**
+ * A layoud for the app with header, children, then footer.
+ */
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>

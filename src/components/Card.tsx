@@ -1,20 +1,10 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import { ChevronRightIcon } from './Icons'
 
-// TODO: move to icons file
-function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-    return (
-        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-            <path
-                d="M6.75 5.75 9.25 8l-2.5 2.25"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-        </svg>
-    )
-}
-
+/**
+ * A card.
+ */
 export function Card<T extends React.ElementType = 'div'>({
     as,
     className,
@@ -34,6 +24,9 @@ export function Card<T extends React.ElementType = 'div'>({
     )
 }
 
+/**
+ * A title text with a link.
+ */
 Card.Link = function CardLink({
     children,
     ...props
@@ -104,6 +97,9 @@ Card.Description = function CardDescription({
     )
 }
 
+/**
+ * A highlighted teal text with chevron right icon indicated to open a link.
+ */
 Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
     return (
         <div
@@ -116,6 +112,9 @@ Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
     )
 }
 
+/**
+ * An eyebrow to the left side of a card.
+ */
 Card.Eyebrow = function CardEyebrow<T extends React.ElementType = 'p'>({
     as,
     decorate = false,

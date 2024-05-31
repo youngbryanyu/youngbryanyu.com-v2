@@ -6,6 +6,10 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import amazonLogo from '@/images/home/amazonLogo.jpg'
 
+/**
+ * This page is currently unused. It should be modified in the future perhaps.
+ */
+
 function SpeakingSection({
     children,
     ...props
@@ -53,7 +57,7 @@ function Position({
             </Card>
             <Card.Eyebrow
                 as="time"
-                dateTime={"TODO: date"}
+                dateTime={"date??"}
                 className="mt-1 hidden md:block"
             >
                 {"May 2022 - Aug 2023"}
@@ -64,7 +68,7 @@ function Position({
 }
 
 export const metadata: Metadata = {
-    title: 'Speaking', // TODO: update
+    title: 'Speaking',
     description:
         'I’ve spoken at events all around the world and been interviewed for many podcasts.',
 }

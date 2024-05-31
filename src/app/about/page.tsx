@@ -3,18 +3,25 @@ import Image from 'next/image'
 import { VerboseSocialLink } from '@/components/SocialLinks'
 import { Container } from '@/components/Container'
 import {
+    EmailIcon,
     GitHubIcon,
     LinkedInIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/about/portrait.jpg'
-import { MailIcon, ResumeIcon } from '@/components/Icons'
+import { ResumeIcon } from '@/components/Icons'
 
+/**
+ * Page metadata.
+ */
 export const metadata: Metadata = {
     title: 'About',
     description:
-        'I’m Young Bryan Yu. I live in San Francisco Bay Area, where I engineer the future.',
+        'I’m Young Bryan Yu. I live in San Francisco Bay Area.',
 }
 
+/**
+ * The about page.
+ */
 export default function About() {
     return (
         <Container className="mt-16 sm:mt-32">
@@ -72,7 +79,7 @@ export default function About() {
                         </VerboseSocialLink>
                         <VerboseSocialLink
                             href="mailto:youngyu19@gmail.com"
-                            icon={MailIcon}
+                            icon={EmailIcon}
                             className='mt-4'
                         >
                             youngyu19@gmail.com

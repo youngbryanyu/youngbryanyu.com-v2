@@ -1,5 +1,8 @@
 import clsx from 'clsx'
 
+/**
+ * A prose.
+ */
 export function Prose({
   className,
   ...props

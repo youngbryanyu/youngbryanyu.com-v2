@@ -2,6 +2,10 @@ import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
+/**
+ * This page is currently unused. It could be converted to another page in the future.
+ */
+
 function ToolsSection({
   children,
   ...props

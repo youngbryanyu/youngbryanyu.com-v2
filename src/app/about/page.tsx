@@ -7,7 +7,7 @@ import {
     LinkedInIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/about/portrait.jpg'
-import { MailIcon } from '@/components/Icons'
+import { MailIcon, ResumeIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
     title: 'About',
@@ -68,9 +68,15 @@ export default function About() {
                             href="mailto:youngyu19@gmail.com"
                             icon={MailIcon}
                             className='mt-4'
-                            // className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
                         >
                             youngyu19@gmail.com
+                        </VerboseSocialLink>
+                        <VerboseSocialLink
+                            href="https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing"
+                            icon={ResumeIcon}
+                            className='mt-4'
+                        >
+                            Resume
                         </VerboseSocialLink>
                     </ul>
                 </div>

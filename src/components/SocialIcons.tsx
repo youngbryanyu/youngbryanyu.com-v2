@@ -1,3 +1,6 @@
+/**
+ * A twitter icon.
+ */
 export function TwitterIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -6,6 +9,9 @@ export function TwitterIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+/**
+ * An instagram icon.
+ */
 export function InstagramIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -15,6 +21,9 @@ export function InstagramIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+/**
+ * A github icon.
+ */
 export function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -27,6 +36,9 @@ export function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+/**
+ * A linkedin icon.
+ */
 export function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>

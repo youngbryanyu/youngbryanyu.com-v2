@@ -39,7 +39,7 @@ Card.Link = function CardLink({
 }: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
     <>
-      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
       <Link {...props}>
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
@@ -48,6 +48,9 @@ Card.Link = function CardLink({
   )
 }
 
+/**
+ * Title of a card.
+ */
 Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
   as,
   href,
@@ -65,6 +68,24 @@ Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
   )
 }
 
+/**
+ * Subtitle of a card.
+ */
+Card.Subtitle = function Subtitle({ children }: { children: React.ReactNode }) {
+    return (
+      <div
+        aria-hidden="true"
+        className="relative z-10 mt-0 flex items-center text-sm font-medium text-teal-500"
+      >
+        {children}
+        <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+      </div>
+    )
+  }
+
+/**
+ * Description of a card.
+ */
 Card.Description = function CardDescription({
   children,
 }: {

@@ -111,6 +111,7 @@ export default function About() {
                                 <VerboseSocialLink
                                     href={link.href}
                                     icon={link.icon}
+                                    aria-label={link.label}
                                     className="mt-4"
                                 >
                                     {link.label}

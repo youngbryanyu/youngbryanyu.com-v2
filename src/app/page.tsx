@@ -115,7 +115,6 @@ export default function Home() {
                                     href={link.href}
                                     aria-label={link.ariaLabel}
                                     icon={link.icon}
-                                    className="flex items-center"
                                 />
                             </div>
                         ))}

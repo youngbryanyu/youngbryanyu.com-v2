@@ -46,6 +46,9 @@ function Role({ role }: { role: Role }) {
     return (
         <li className="relative group transition rounded-lg -m-2">
             <Link href={role.link || '#'} target="_blank" rel="noopener noreferrer" className="block p-6 m-2">
+                {/* This empty div gives the hover outline effect */}
+                <div className="absolute inset-0 z-0 transform scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 rounded-lg" />
+
                 <div className="relative z-10 flex gap-4 items-center">
 
                     {/* The company logo */}

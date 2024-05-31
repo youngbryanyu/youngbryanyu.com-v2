@@ -7,7 +7,6 @@ import Link from 'next/link'
 import keybyteLogo from '@/images/career/keybyte.png'
 import amazonLogo from '@/images/career/amazon.jpg'
 import purdueLogo from '@/images/career/purdue.jpg'
-import { BriefcaseIcon, GraduationCapIcon } from '@/components/Icons'
 import React from 'react'
 
 /**
@@ -60,20 +59,22 @@ function Role({ role }: { role: Role }) {
             <Link href={role.link || '#'} target="_blank" rel="noopener noreferrer" className="block p-6 m-2">
                 <div className="absolute inset-0 z-0 transform scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 rounded-lg" />
                 <div className="relative z-10 flex gap-4 items-center">
+
                     {/* The company logo */}
-                    <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                    <div className="relative flex h-12 w-12 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                         <Image
                             src={role.logo}
                             alt=""
-                            className="h-9 w-9 rounded-full"
+                            className="h-11 w-11 rounded-full"
                             unoptimized
                         />
                     </div>
                     <dl className="flex flex-auto flex-wrap gap-x-2 items-center">
+
                         {/* The role name */}
                         <div className="flex items-baseline w-full">
                             <dt className="sr-only">Role</dt>
-                            <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                            <dd className="text-m font-semibold text-zinc-900 dark:text-zinc-100">
                                 {role.title}
                             </dd>
                             <dd
@@ -85,16 +86,17 @@ function Role({ role }: { role: Role }) {
                                 <time dateTime={endDate}>{endLabel}</time>
                             </dd>
                         </div>
+
                         {/* The company */}
                         <dt className="sr-only">Company</dt>
-                        <dd className="flex items-center w-full text-xs text-zinc-900 dark:text-zinc-100 mt-0.5 transition group-hover:text-teal-500">
+                        <dd className="flex items-center w-full text-sm text-zinc-900 dark:text-zinc-100 mt-0.5 transition group-hover:text-teal-500">
                             {role.company}
                             {/* <ChevronRightIcon className="ml-0 h-4 w-4 stroke-current" /> */}
                         </dd>
                         {/* The description */}
                         {role.description && (
                             <dd
-                                className="w-full text-xs text-zinc-500 dark:text-zinc-400 mt-0.5"
+                                className="w-full text-sm text-zinc-500 dark:text-zinc-400 mt-0.5"
                             >
                                 {formatDescription(role.description)}
                             </dd>
@@ -148,8 +150,7 @@ function Experience() {
     return (
         <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
             <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                <BriefcaseIcon className="h-6 w-6 flex-none" />
-                <span className="ml-3">Experience</span>
+                <span className="text-xl ml-3">Experience</span>
             </h2>
             <ol className="mt-6 space-y-4">
                 {resume.map((role, roleIndex) => (
@@ -190,8 +191,7 @@ function Education() {
     return (
         <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
             <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                <GraduationCapIcon className="h-6 w-6 flex-none" />
-                <span className="ml-3">Education</span>
+                <span className="text-xl ml-3">Education</span>
             </h2>
             <ol className="mt-6 space-y-4">
                 {resume.map((role, roleIndex) => (
@@ -233,13 +233,13 @@ export default function Career() {
 // TODO: move to icon file
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     return (
-      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-        <path
-          d="M6.75 5.75 9.25 8l-2.5 2.25"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+            <path
+                d="M6.75 5.75 9.25 8l-2.5 2.25"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
     )
-  }
+}

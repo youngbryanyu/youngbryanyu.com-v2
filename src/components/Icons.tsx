@@ -2,6 +2,8 @@ import { SVGProps } from "react";
 
 /**
  * A brief case icon.
+ * 
+ * This icon is not meant to be hovered over, as it will not change much color during a hover.
  */
 export function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     return (
@@ -31,6 +33,7 @@ export function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
  */
 export function GraduationCapIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     return (
+
         <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -47,6 +50,7 @@ export function GraduationCapIcon(props: React.ComponentPropsWithoutRef<'svg'>) 
         </svg>
     )
 }
+
 
 /**
  * A mail icon.

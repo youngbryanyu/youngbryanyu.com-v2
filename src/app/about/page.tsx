@@ -19,6 +19,8 @@ export default function About() {
     return (
         <Container className="mt-16 sm:mt-32">
             <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+
+                {/* Photo of me */}
                 <div className="lg:pl-20">
                     <div className="max-w-xs px-2.5 lg:max-w-none">
                         <Image
@@ -29,6 +31,8 @@ export default function About() {
                         />
                     </div>
                 </div>
+
+                {/* Title and about me */}
                 <div className="lg:order-first lg:row-span-2">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         I’m Young Bryan Yu.
@@ -48,6 +52,8 @@ export default function About() {
                         </p>
                     </div>
                 </div>
+
+                {/* Social Icons */}
                 <div className="lg:pl-20">
                     <ul role="list">
                         <VerboseSocialLink
@@ -80,6 +86,7 @@ export default function About() {
                         </VerboseSocialLink>
                     </ul>
                 </div>
+
             </div>
         </Container>
     )

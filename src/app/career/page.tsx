@@ -4,9 +4,9 @@ import { Container } from '@/components/Container'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Link from 'next/link'
 
-import keybyteLogo from '@/images/home/keybyte.png'
-import amazonLogo from '@/images/home/amazon.jpg'
-import purdueLogo from '@/images/home/purdue.jpg'
+import keybyteLogo from '@/images/career/keybyte.png'
+import amazonLogo from '@/images/career/amazon.jpg'
+import purdueLogo from '@/images/career/purdue.jpg'
 import { BriefcaseIcon, GraduationCapIcon } from '@/components/Icons'
 import React from 'react'
 

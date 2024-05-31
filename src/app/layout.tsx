@@ -5,6 +5,9 @@ import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 
+/**
+ * Home Page Metadata.
+ */
 export const metadata: Metadata = {
     title: {
         template: '%s - Young Bryan Yu',
@@ -20,6 +23,9 @@ export const metadata: Metadata = {
     },
 }
 
+/**
+ * Root layout of app.
+ */
 export default function RootLayout({
     children,
 }: {

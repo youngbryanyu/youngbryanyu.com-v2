@@ -30,9 +30,9 @@ export function Footer() {
                                 <NavLink href="/">Home</NavLink>
                                 <NavLink href="/about">About</NavLink>
                                 <NavLink href="/career">Career</NavLink>
-                                <NavLink href="/articles">Articles</NavLink>
+                                {/* <NavLink href="/articles">Articles</NavLink> */}
                                 <NavLink href="/projects">Projects</NavLink>
-                                <NavLink href="/uses">Uses</NavLink>
+                                {/* <NavLink href="/uses">Uses</NavLink> */}
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
                                 &copy; {new Date().getFullYear()} Young Bryan Yu. All rights

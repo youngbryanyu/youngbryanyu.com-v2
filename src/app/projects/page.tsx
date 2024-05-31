@@ -3,81 +3,101 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoTapasom from '@/images/logos/logo.png'
-import logoCleversh from '@/images/logos/cleversh.png'
-import logoXRPL from '@/images/logos/XRP_logo.jpeg'
+import githubLogo from '@/images/projects/github.png'
+import npmLogo from '@/images/projects/npm.png'
+import titanLogo from '@/images/projects/titan.png'
+import fudstopsLogo from '@/images/projects/fudstops.png'
 
+
+/**
+ * Project details.
+ */
 const projects = [
-  {
-    name: 'Tapasom',
-    description: `Tapasom is a no-code tool that helps small to medium sized businesses sell, manage, and grow their sales - all in one place.`,
-    link: { href: 'http://tapasom.com', label: 'tapasom.com' },
-    logo: logoTapasom,
-  },
-  {
-    name: 'Cleversh Inc',
-    description: `Cleversh has a collection of carefully crafted to capture the essence of India's rich and diverse culture and to evoke feelings of warmth, and happiness.`,
-    link: { href: 'https://clevershinc.com', label: 'clevershinc.com' },
-    logo: logoCleversh,
-  },
-  {
-    name: 'XRPL nftoupon',
-    description: `NFT-based loyalty program that enables customer to explore coupons created by different merchants to mint new NFTs and send them to a customer's wallet.`,
-    link: {
-      href: 'https://xrplgrants.org/grantees?query=nftoupon',
-      label: 'nftoupon',
+    {
+        name: 'SimpliStash',
+        description: `A simple in-memory key-value database with a custom TCP-based protocol supporting features like TTL, LRU eviction, snapshots to disk, single-leader replication, off-heap storage, and a CLI.`,
+        link: {
+            href: 'https://github.com/youngbryanyu/SimpliStash',
+            label: 'GitHub Repository'
+        },
+        logo: githubLogo,
     },
-    logo: logoXRPL,
-  },
+    {
+        name: 'simple-app-config',
+        description: `A simple easy-to-use configuration manager package for Node.js applications.`,
+        link: {
+            href: 'https://github.com/youngbryanyu/simple-app-config',
+            label: 'GitHub Repository'
+        },
+        logo: npmLogo,
+    },
+    {
+        name: 'Titan Health App',
+        description: `An all-in-one fitness, nutrition, and health tracking web application that integrates with Purdue dining menus.`,
+        link: {
+            href: 'https://github.com/youngbryanyu/titan-health-app',
+            label: 'GitHub Repository',
+        },
+        logo: titanLogo,
+    },
+    {
+        name: 'Füdstops: Dining Recommendations for Students',
+        description: `A dining court menu web application for Purdue students supporting features like recommendations, dietary preferences, ratings, popular menu items, search, filtering, and notifications.`,
+        link: {
+            href: 'https://github.com/youngbryanyu/fudstops',
+            label: 'GitHub Repository',
+        },
+        logo: fudstopsLogo,
+    },
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
+    return (
+        <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+            <path
+                d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
+                fill="currentColor"
+            />
+        </svg>
+    )
 }
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+    title: 'Projects',
+    description: 'Things I’ve made trying to put my dent in the universe.',
 }
 
 export default function Projects() {
-  return (
-    <SimpleLayout
-      title="I've created things in an attempt to make a difference in the world."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of."
-    >
-      <ul
-        role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        {projects.map((project) => (
-          <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-11 w-11 rounded-full"
-                unoptimized
-              />
-            </div>
-            <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
-            </h2>
-            <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p>
-          </Card>
-        ))}
-      </ul>
-    </SimpleLayout>
-  )
+    return (
+        <SimpleLayout
+            title="Some projects I've built."
+            intro="I've worked on some personal projects for fun in my free time."
+        >
+            <ul
+                role="list"
+                className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+            >
+                {projects.map((project) => (
+                    <Card as="li" key={project.name}>
+                        <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                            <Image
+                                src={project.logo}
+                                alt=""
+                                className="h-11 w-11 rounded-full"
+                                unoptimized
+                            />
+                        </div>
+                        <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                            <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                        </h2>
+                        <Card.Description>{project.description}</Card.Description>
+                        <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                            <LinkIcon className="h-6 w-6 flex-none" />
+                            <span className="ml-2">{project.link.label}</span>
+                        </p>
+                    </Card>
+                ))}
+            </ul>
+        </SimpleLayout>
+    )
 }

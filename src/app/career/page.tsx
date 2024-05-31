@@ -4,9 +4,9 @@ import { Container } from '@/components/Container'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Link from 'next/link'
 
-import keybyteLogo from '@/images/home/keybyteLogo.png'
-import amazonLogo from '@/images/home/amazonLogo.jpg'
-import purdueLogo from '@/images/home/purdueLogo.jpg'
+import keybyteLogo from '@/images/home/keybyte.png'
+import amazonLogo from '@/images/home/amazon.jpg'
+import purdueLogo from '@/images/home/purdue.jpg'
 import { BriefcaseIcon, GraduationCapIcon } from '@/components/Icons'
 import React from 'react'
 
@@ -87,8 +87,9 @@ function Role({ role }: { role: Role }) {
                         </div>
                         {/* The company */}
                         <dt className="sr-only">Company</dt>
-                        <dd className="w-full text-xs text-zinc-900 dark:text-zinc-100 mt-0.5">
+                        <dd className="flex items-center w-full text-xs text-zinc-900 dark:text-zinc-100 mt-0.5 transition group-hover:text-teal-500">
                             {role.company}
+                            {/* <ChevronRightIcon className="ml-0 h-4 w-4 stroke-current" /> */}
                         </dd>
                         {/* The description */}
                         {role.description && (
@@ -122,7 +123,7 @@ function Experience() {
                 dateTime: new Date().getFullYear().toString(),
             },
             description: 'Working on OptimusCloud',
-            link: 'https://www.keybyte.com'
+            link: 'https://www.keybyte.xyz'
         },
         {
             company: 'Amazon',
@@ -228,3 +229,17 @@ export default function Career() {
         </>
     )
 }
+
+// TODO: move to icon file
+function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+    return (
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+        <path
+          d="M6.75 5.75 9.25 8l-2.5 2.25"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    )
+  }

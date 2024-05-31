@@ -9,6 +9,9 @@ import amazonLogo from '@/images/career/amazon.jpg'
 import purdueLogo from '@/images/career/purdue.jpg'
 import React from 'react'
 
+import 'animate.css' /* Need to import in this class or reload doesn't animate */
+
+
 /**
  * Page metadata.
  */
@@ -190,7 +193,9 @@ export default function Career() {
             {/* Experience Section */}
             <Container className="mt-12 md:mt-14">
                 <div className="mx-auto max-w-xl lg:max-w-none">
-                    <div className="space-y-10">
+                    <div 
+                    className="space-y-10 animate__animated animate__fadeInUp"
+                    >
                         <Experience />
                     </div>
                 </div>
@@ -198,7 +203,7 @@ export default function Career() {
             {/* Education Section */}
             <Container className="mt-12 md:mt-14">
                 <div className="mx-auto max-w-xl lg:max-w-none">
-                    <div className="space-y-10">
+                    <div className="space-y-10 animate__animated animate__fadeInUp">
                         <Education />
                     </div>
                 </div>

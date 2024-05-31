@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 export default function Speaking() {
     return (
         <SimpleLayout
-            title="My career so far."
+            title="My speaking so far."
             intro="All my professional experiences and education so far, collected in chronological order."
         >
             <div className="space-y-20">

@@ -10,6 +10,8 @@ import {
 import portraitImage from '@/images/about/portrait.jpg'
 import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
+import 'animate.css' /* Need to import in this class or reload doesn't animate */
+
 
 /**
  * Page metadata.
@@ -30,7 +32,8 @@ export default function About() {
 
                 {/* Photo of me */}
                 <div className="lg:pl-20">
-                    <div className="max-w-xs px-2.5 lg:max-w-none">
+                    {/* Using animation in parent class doesn't override rotation of image */}
+                    <div className="max-w-xs px-2.5 lg:max-w-none animate__animated animate__fadeInRight">
                         <Image
                             src={portraitImage}
                             alt=""
@@ -42,10 +45,10 @@ export default function About() {
 
                 {/* Title and about me */}
                 <div className="lg:order-first lg:row-span-2">
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl animate__animated animate__fadeInUp">
                         I’m Young Bryan Yu.
                     </h1>
-                    <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+                    <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 animate__animated animate__fadeInUp">
                         <p>
                             I live in San Francisco Bay Area.
                         </p>
@@ -64,34 +67,42 @@ export default function About() {
                 {/* Social Icons */}
                 <div className="lg:pl-20">
                     <ul role="list">
-                        <VerboseSocialLink
-                            href="https://www.linkedin.com/in/youngbryanyu/"
-                            icon={LinkedInIcon}
-                            className="mt-4"
-                        >
-                            LinkedIn
-                        </VerboseSocialLink>
-                        <VerboseSocialLink
-                            href="https://github.com/youngbryanyu"
-                            icon={GitHubIcon}
-                            className="mt-4"
-                        >
-                            GitHub
-                        </VerboseSocialLink>
-                        <VerboseSocialLink
-                            href="mailto:youngyu19@gmail.com"
-                            icon={EmailIcon}
-                            className='mt-4'
-                        >
-                            youngyu19@gmail.com
-                        </VerboseSocialLink>
-                        <VerboseSocialLink
-                            href="https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing"
-                            icon={ResumeIcon}
-                            className='mt-4'
-                        >
-                            Resume
-                        </VerboseSocialLink>
+                        {[
+                            {
+                                href: "https://www.linkedin.com/in/youngbryanyu/",
+                                icon: LinkedInIcon,
+                                label: "LinkedIn",
+                            },
+                            {
+                                href: "https://github.com/youngbryanyu",
+                                icon: GitHubIcon,
+                                label: "GitHub",
+                            },
+                            {
+                                href: "mailto:youngyu19@gmail.com",
+                                icon: EmailIcon,
+                                label: "youngyu19@gmail.com",
+                            },
+                            {
+                                href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
+                                icon: ResumeIcon,
+                                label: "Resume",
+                            },
+                        ].map((link, index) => (
+                            <div
+                                key={index}
+                                className="animate__animated animate__fadeInUp"
+                                style={{ animationDelay: `${index * 0.1}s` }} /* Delay for staggered effect */
+                            >
+                                <VerboseSocialLink
+                                    href={link.href}
+                                    icon={link.icon}
+                                    className="mt-4"
+                                >
+                                    {link.label}
+                                </VerboseSocialLink>
+                            </div>
+                        ))}
                     </ul>
                 </div>
 

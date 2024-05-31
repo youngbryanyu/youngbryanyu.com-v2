@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import clsx from 'clsx'
+import 'animate.css' /* Need to import in this class or reload doesn't animate */
 
 import { Container } from '@/components/Container'
 import { EmailIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
@@ -17,71 +18,94 @@ import { LinkedText } from '@/components/Links'
  * The photos section.
  */
 function Photos() {
-    let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+    let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
     return (
         <div className="mt-16 sm:mt-20">
             <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
                 {[alviso, sedona, photography, oregon, chicago1].map((image, imageIndex) => (
+                    /* Animation must be in parent container of image to not override rotations */
                     <div
                         key={image.src}
-                        className={clsx(
-                            'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-                            rotations[imageIndex % rotations.length],
-                        )}
+                        className="animate__animated animate__fadeInUp"
+                        style={{ animationDelay: `${imageIndex * 0.1}s` }} /* Add delay for staggered effect */
                     >
-                        <Image
-                            src={image}
-                            alt=""
-                            sizes="(min-width: 640px) 18rem, 11rem"
-                            className="absolute inset-0 h-full w-full object-cover"
-                        />
+                        <div
+                            className={clsx(
+                                'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+                                rotations[imageIndex % rotations.length],
+                            )}
+                        >
+                            <Image
+                                src={image}
+                                alt=""
+                                sizes="(min-width: 640px) 18rem, 11rem"
+                                className="absolute inset-0 h-full w-full object-cover"
+                            />
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 /**
  * The full home page.
  */
-export default async function Home() {
+/**
+ * The full home page.
+ */
+export default function Home() {
     return (
         <>
             <Container className="mt-9">
                 <div className="max-w-2xl">
-
                     {/* Title and introduction */}
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl animate__animated animate__fadeInUp">
                         Software engineer, photographer, and adventurer.
                     </h1>
-                    <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                    <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400 animate__animated animate__fadeInUp">
                         I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I am based in San Francisco Bay Area. I&apos;m currently working at startup {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies.
                     </p>
 
                     {/* Social Links */}
                     <div className="mt-6 flex gap-6">
-                        <SimpleSocialLink
-                            href="https://www.linkedin.com/in/youngbryanyu/"
-                            aria-label="Connect on LinkedIn"
-                            icon={LinkedInIcon}
-                        />
-                        <SimpleSocialLink
-                            href="https://github.com/youngbryanyu"
-                            aria-label="Connect on GitHub"
-                            icon={GitHubIcon}
-                        />
-                        <SimpleSocialLink
-                            href="mailto:youngyu19@gmail.com"
-                            aria-label="Connect through email"
-                            icon={EmailIcon}
-                        />
-                        <SimpleSocialLink
-                            href="https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing"
-                            aria-label="Connect through email"
-                            icon={ResumeIcon}
-                        />
+                        {[
+                            {
+                                href: "https://www.linkedin.com/in/youngbryanyu/",
+                                ariaLabel: "Connect on LinkedIn",
+                                icon: LinkedInIcon,
+                            },
+                            {
+                                href: "https://github.com/youngbryanyu",
+                                ariaLabel: "Connect on GitHub",
+                                icon: GitHubIcon,
+                            },
+                            {
+                                href: "mailto:youngyu19@gmail.com",
+                                ariaLabel: "Connect through email",
+                                icon: EmailIcon,
+                            },
+                            {
+                                href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
+                                ariaLabel: "Connect through email",
+                                icon: ResumeIcon,
+                            },
+                        ].map((link, index) => (
+                            <div
+                                key={index}
+                                className="animate__animated animate__fadeInUp"
+                                style={{ animationDelay: `${index * 0.1}s` }} /* Delay for staggered effect */
+                            >
+                                <SimpleSocialLink
+                                    href={link.href}
+                                    aria-label={link.ariaLabel}
+                                    icon={link.icon}
+                                    className="flex items-center"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </Container>
@@ -89,5 +113,5 @@ export default async function Home() {
             {/* Photos Section */}
             <Photos />
         </>
-    )
+    );
 }

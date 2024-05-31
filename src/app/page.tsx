@@ -11,6 +11,7 @@ import oregon from '@/images/home/oregon.jpg'
 import React from 'react'
 import { SimpleSocialLink } from '@/components/SocialLinks'
 import { ResumeIcon } from '@/components/Icons'
+import { LinkedText } from '@/components/Links'
 
 /**
  * The photos section.
@@ -50,13 +51,13 @@ export default async function Home() {
         <>
             <Container className="mt-9">
                 <div className="max-w-2xl">
-                    
+
                     {/* Title and introduction */}
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         Software engineer, photographer, and adventurer.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at Purdue University. I am based in San Francisco Bay Area. I&apos;m currently working at startup KeyByte LLC on some cutting edge database and VM tuning technologies.
+                        I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I am based in San Francisco Bay Area. I&apos;m currently working at startup {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies.
                     </p>
 
                     {/* Social Links */}

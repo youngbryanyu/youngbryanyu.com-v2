@@ -9,6 +9,7 @@ import {
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/about/portrait.jpg'
 import { ResumeIcon } from '@/components/Icons'
+import { LinkedText } from '@/components/Links'
 
 /**
  * Page metadata.
@@ -49,10 +50,10 @@ export default function About() {
                             I live in San Francisco Bay Area.
                         </p>
                         <p>
-                            Currently, I am pursuing a MS in Computer Science at Purdue University. I received my BS in Computer Science from Purdue University as well. I am interested in distributed systems, databases, and computing.
+                            Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well. I am interested in distributed systems, databases, and computing.
                         </p>
                         <p>
-                            I am currently working at startup at KeyByte LLC on database and VM tuning technologies. I have also worked at Amazon building services for Alexa devices.
+                            I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
                         </p>
                         <p>
                             When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling as well.

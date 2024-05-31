@@ -24,8 +24,7 @@ interface Role {
     company: string
     title: string
     logo: ImageProps['src']
-    start: string | { label: string; dateTime: string }
-    end: string | { label: string; dateTime: string }
+    time: string
     description?: string
     link?: string
 }
@@ -34,16 +33,6 @@ interface Role {
  * A role within the `Experience` section.
  */
 function Role({ role }: { role: Role }) {
-    let startLabel =
-        typeof role.start === 'string' ? role.start : role.start.label
-    let startDate =
-        typeof role.start === 'string' ? role.start : role.start.dateTime
-
-    let endLabel =
-        typeof role.end === 'string' ? role.end : role.end.label
-    let endDate =
-        typeof role.end === 'string' ? role.end : role.end.dateTime
-
     // Convert newlines to <br />
     const formatDescription = (description: string) => {
         return description.split('\n').map((line, index) => (
@@ -78,12 +67,9 @@ function Role({ role }: { role: Role }) {
                                 {role.title}
                             </dd>
                             <dd
-                                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                                aria-label={`${startLabel} until ${endLabel}`}
+                                className="ml-auto text-sm text-zinc-400 dark:text-zinc-500"
                             >
-                                <time dateTime={startDate}>{startLabel}</time>{' '}
-                                <span aria-hidden="true">—</span>{' '}
-                                <time dateTime={endDate}>{endLabel}</time>
+                                <span>{role.time}</span>
                             </dd>
                         </div>
 
@@ -119,11 +105,7 @@ function Experience() {
             company: 'KeyByte LLC',
             title: 'Software Engineer Intern',
             logo: keybyteLogo,
-            start: 'Nov 2020',
-            end: {
-                label: 'Present',
-                dateTime: new Date().getFullYear().toString(),
-            },
+            time: 'Summer 2024',
             description: 'Working on OptimusCloud',
             link: 'https://www.keybyte.xyz'
         },
@@ -131,8 +113,7 @@ function Experience() {
             company: 'Amazon',
             title: 'Software Development Engineer Intern',
             logo: amazonLogo,
-            start: 'Aug 2023',
-            end: 'Mar 2023',
+            time: 'Summer 2023',
             description: 'Alexa Food',
             link: 'https://www.amazon.com'
         },
@@ -140,8 +121,7 @@ function Experience() {
             company: 'Amazon',
             title: 'Software Development Engineer Intern',
             logo: amazonLogo,
-            start: 'Aug 2023',
-            end: 'Mar 2023',
+            time: 'Summer 2022',
             description: 'Alexa Kitchen',
             link: 'https://www.amazon.com'
         },
@@ -170,19 +150,14 @@ function Education() {
             company: 'Purdue University',
             title: 'MS, Computer Science',
             logo: purdueLogo,
-            start: 'Nov 2020',
-            end: {
-                label: 'Present',
-                dateTime: new Date().getFullYear().toString(),
-            },
+            time: '2024 - 2026',
             link: 'https://www.purdue.edu'
         },
         {
             company: 'Purdue University',
             title: 'BS, Computer Science',
             logo: purdueLogo,
-            start: 'Aug 2020',
-            end: 'Dec 2023',
+            time: '2020 - 2023',
             description: 'Certificate in Entrepreneurship and Innovation',
             link: 'https://www.purdue.edu'
         },

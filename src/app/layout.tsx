@@ -11,7 +11,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
     title: {
         template: '%s - Young Bryan Yu',
-        default: 'Young Bryan Yu - Software Engineer',
+        default: 'Young Bryan Yu\'s Home Page',
     },
     description: `I'm Young, a software engineer who is currently pursuing a master's degree in Computer Science at Purdue University. I am based in San Francisco Bay Area. I'm currently working at startup KeyByte LLC with Dr. Saurabh Bagchi and Dr. Somali Chaterji on some cutting edge database and VM tuning technologies.
 

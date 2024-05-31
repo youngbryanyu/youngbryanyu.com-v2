@@ -62,11 +62,17 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     )
 }
 
+/**
+ * Page metadata.
+ */
 export const metadata: Metadata = {
     title: 'Projects',
-    description: 'Things I’ve made trying to put my dent in the universe.',
+    description: 'Things I’ve made trying to put my dent in the universe.', // TODO: update page metadata for all pages
 }
 
+/**
+ * The complete projects page.
+ */
 export default function Projects() {
     return (
         <SimpleLayout

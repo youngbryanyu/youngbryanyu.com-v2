@@ -78,12 +78,12 @@ export default function Projects() {
                 className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
             >
                 {projects.map((project, index) => (
-                    /* Wrap card in container to stagger animations */
+                    /* Animations for Card won't stagger here if not wrapped in container */
                     <div
                         key={project.name}
                         className="animate__animated animate__fadeInUp"
                         style={{
-                            animationDelay: `${index * 0.1}s`,
+                            animationDelay: `${index * 0.1}s`, /* Stagger animation */
                         }}
                     >
                         <Card as="li">

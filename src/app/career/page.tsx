@@ -11,7 +11,6 @@ import React from 'react'
 
 import 'animate.css' /* Need to import in this class or reload doesn't animate */
 
-
 /**
  * Page metadata.
  */
@@ -99,8 +98,6 @@ function Role({ role }: { role: Role }) {
     )
 }
 
-
-
 /**
  * The `Experience` section.
  */
@@ -182,6 +179,9 @@ function Education() {
     )
 }
 
+/**
+ * The career page.
+ */
 export default function Career() {
     return (
         <>
@@ -190,24 +190,24 @@ export default function Career() {
                 intro="All my professional experiences and education so far, collected in chronological order."
             >
             </SimpleLayout>
+            
             {/* Experience Section */}
-            <Container className="mt-12 md:mt-14">
-                <div className="mx-auto max-w-xl lg:max-w-none">
-                    <div 
-                    className="space-y-10 animate__animated animate__fadeInUp"
-                    >
+            <div className='animate__animated animate__fadeInUp'>
+                <Container className="mt-12 md:mt-14">
+                    <div className="mx-auto max-w-xl lg:max-w-none space-y-10">
                         <Experience />
                     </div>
-                </div>
-            </Container>
+                </Container>
+            </div>
+
             {/* Education Section */}
-            <Container className="mt-12 md:mt-14">
-                <div className="mx-auto max-w-xl lg:max-w-none">
-                    <div className="space-y-10 animate__animated animate__fadeInUp">
+            <div className='animate__animated animate__fadeInUp'>
+                <Container className="mt-12 md:mt-14">
+                    <div className="mx-auto max-w-xl lg:max-w-none space-y-10">
                         <Education />
                     </div>
-                </div>
-            </Container>
+                </Container>
+            </div>
         </>
     )
 }

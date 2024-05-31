@@ -15,6 +15,32 @@ import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 
 /**
+ * List of socials.
+ */
+const socials = [
+    {
+        href: "https://www.linkedin.com/in/youngbryanyu/",
+        ariaLabel: "Connect on LinkedIn",
+        icon: LinkedInIcon,
+    },
+    {
+        href: "https://github.com/youngbryanyu",
+        ariaLabel: "Connect on GitHub",
+        icon: GitHubIcon,
+    },
+    {
+        href: "mailto:youngyu19@gmail.com",
+        ariaLabel: "Connect through email",
+        icon: EmailIcon,
+    },
+    {
+        href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
+        ariaLabel: "Connect through email",
+        icon: ResumeIcon,
+    },
+]
+
+/**
  * The photos section.
  */
 function Photos() {
@@ -61,42 +87,29 @@ export default function Home() {
         <>
             <Container className="mt-9">
                 <div className="max-w-2xl">
-                    {/* Title and introduction */}
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl animate__animated animate__fadeInUp">
-                        Software engineer, photographer, and adventurer.
-                    </h1>
-                    <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400 animate__animated animate__fadeInUp">
-                        I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I am based in San Francisco Bay Area. I&apos;m currently working at startup {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies.
-                    </p>
+                    {/* Title */}
+                    <div className='animate__animated animate__fadeInUp'>
+                        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                            Software engineer, photographer, and adventurer.
+                        </h1>
+                    </div>
+
+                    {/* Introduction */}
+                    <div className='animate__animated animate__fadeInUp'>
+                        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                            I&apos;m Young, a software engineer who is currently pursuing a master&apos;s degree in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I am based in San Francisco Bay Area. I&apos;m currently working at startup {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies.
+                        </p>
+                    </div>
 
                     {/* Social Links */}
                     <div className="mt-6 flex gap-6">
-                        {[
-                            {
-                                href: "https://www.linkedin.com/in/youngbryanyu/",
-                                ariaLabel: "Connect on LinkedIn",
-                                icon: LinkedInIcon,
-                            },
-                            {
-                                href: "https://github.com/youngbryanyu",
-                                ariaLabel: "Connect on GitHub",
-                                icon: GitHubIcon,
-                            },
-                            {
-                                href: "mailto:youngyu19@gmail.com",
-                                ariaLabel: "Connect through email",
-                                icon: EmailIcon,
-                            },
-                            {
-                                href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
-                                ariaLabel: "Connect through email",
-                                icon: ResumeIcon,
-                            },
-                        ].map((link, index) => (
+                        {socials.map((link, index) => (
                             <div
                                 key={index}
                                 className="animate__animated animate__fadeInUp"
-                                style={{ animationDelay: `${index * 0.1}s` }} /* Delay for staggered effect */
+                                style={{
+                                    animationDelay: `${index * 0.1}s` /* Stagger animations */
+                                }}
                             >
                                 <SimpleSocialLink
                                     href={link.href}

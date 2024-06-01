@@ -78,7 +78,7 @@ export default function About() {
                     {/* Title */}
                     <div className='animate__animated animate__fadeInUp'>
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            I’m Young Bryan Yu.
+                            A little more about me.
                         </h1>
                     </div>
 
@@ -86,7 +86,7 @@ export default function About() {
                     <div className='animate__animated animate__fadeInUp'>
                         <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                             <p>
-                                I grew up in San Francisco Bay Area (more precisely, Silicon Valley, home of Apple). I was born in Montana (middle of nowhere), but my family moved to California when I was around 5.
+                                I&apos;m Young Bryan Yu. I grew up in San Francisco Bay Area (more precisely, Silicon Valley, home of Apple). I was born in Montana (middle of nowhere), but my family moved to California when I was around 5.
                             </p>
                             <p>
                                 I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well.

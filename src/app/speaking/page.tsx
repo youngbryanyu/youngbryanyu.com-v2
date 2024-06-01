@@ -7,7 +7,7 @@ import Image from 'next/image'
 import amazonLogo from '@/images/home/amazonLogo.jpg'
 
 /**
- * This page is currently unused. It should be modified in the future perhaps.
+ * The speaking section page in the template. Currently unused.
  */
 
 function SpeakingSection({

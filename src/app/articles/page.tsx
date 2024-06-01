@@ -5,6 +5,10 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
+/**
+ * Articles page from the template. Currently unused.
+ */
+
 function Article({ article }: { article: ArticleWithSlug }) {
     return (
         <article className="md:grid md:grid-cols-4 md:items-baseline">

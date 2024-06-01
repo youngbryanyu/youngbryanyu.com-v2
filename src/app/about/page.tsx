@@ -48,7 +48,7 @@ const socials = [
 export const metadata: Metadata = {
     title: 'About',
     description:
-        'I’m Young Bryan Yu. I live in San Francisco Bay Area.',
+        'I’m Young Bryan Yu. I live in San Francisco Bay Area. I\'m a software engineer who is interested in distributed systems, databases, and computing',
 }
 
 /**
@@ -109,9 +109,9 @@ export default function About() {
                             <div
                                 key={index}
                                 className="animate__animated animate__fadeInUp"
-                                style={{ 
+                                style={{
                                     animationDelay: `${index * 0.1}s` /* Stagger animations */
-                                }} 
+                                }}
                             >
                                 <VerboseSocialLink
                                     href={link.href}

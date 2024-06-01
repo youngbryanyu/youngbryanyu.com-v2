@@ -12,12 +12,16 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
  */
 export const metadata: Metadata = {
     title: {
+        /* Title of every page in the format `<title> - Young Bryan Yu`*/
         template: '%s - Young Bryan Yu',
-        default: 'Young Bryan Yu\'s Home Page',
-    },
-    description: `I'm Young, a software engineer who is currently pursuing a master's degree in Computer Science at Purdue University. I am based in San Francisco Bay Area. I'm currently working at startup KeyByte LLC with Dr. Saurabh Bagchi and Dr. Somali Chaterji on some cutting edge database and VM tuning technologies.
 
-  `,
+        /* Title of the home page of the site on search engines */
+        default: 'Young Bryan Yu',
+    },
+
+    /* This is the description under the title on search */
+    description: `I'm Young, a software engineer who is interested in distributed systems, databases, and computing. I'm currently pursuing a MS in Computer Science at Purdue University.`,
+
     alternates: {
         types: {
             'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
@@ -44,7 +48,7 @@ export default function RootLayout({
 
                 {/* Vercel speed insights and analytics (next) */}
                 <Analytics />
-                <SpeedInsights/>
+                <SpeedInsights />
             </body>
         </html>
     )

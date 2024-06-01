@@ -2,6 +2,10 @@ import { type Metadata } from 'next'
 
 import { SimpleLayout } from '@/components/SimpleLayout'
 
+/**
+ * Thank you for subscribing page from the template. Currently unused.
+ */
+
 export const metadata: Metadata = {
   title: 'You’re subscribed',
   description: 'Thanks for subscribing to my newsletter.',

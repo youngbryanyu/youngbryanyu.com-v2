@@ -3,7 +3,7 @@ import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 /**
- * This page is currently unused. It could be converted to another page in the future.
+ * Uses page from the template. Currently unused.
  */
 
 function ToolsSection({

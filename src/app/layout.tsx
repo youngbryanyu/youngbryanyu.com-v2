@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     },
 
     /* This is the description under the title on search */
-    description: `I'm Young, a software engineer who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. Some places I've worked include Amazon and startup KeyByte LLC.`,
+    description: `I'm Young Bryan Yu, a software engineer who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. Some places I've worked include Amazon and startup KeyByte LLC.`,
 
     alternates: {
         types: {

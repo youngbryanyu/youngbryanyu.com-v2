@@ -86,7 +86,7 @@ export default function About() {
                     <div className='animate__animated animate__fadeInUp'>
                         <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                             <p>
-                                I live in San Francisco Bay Area.
+                                I grew up in San Francisco Bay Area. More precisely, Silicon Valley, home of Apple. I was actually born in Montana (middle of nowhere), but my family moved to California when I was around 5.
                             </p>
                             <p>
                                 I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well.
@@ -95,7 +95,7 @@ export default function About() {
                                 I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
                             </p>
                             <p>
-                                When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling as well.
+                                When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven't had too much time for it lately.
                             </p>
                         </div>
                     </div>

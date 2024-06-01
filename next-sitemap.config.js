@@ -9,7 +9,7 @@ module.exports = {
     /* Custom sitemap transform function */
     transform: async (config, path) => {
         /* Default priority for each page */
-        let priority = 0.5; 
+        let priority = 0.7; 
 
         /* Set priority to 1 for home page */
         if (path === '/') {

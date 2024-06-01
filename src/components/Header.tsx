@@ -19,16 +19,16 @@ function MobileNavItem({
     href,
     children,
 }: {
-    href: string
-    children: React.ReactNode
+    href: string;
+    children: React.ReactNode;
 }) {
     return (
         <li>
-            <Popover.Button as={Link} href={href} className="block py-2">
+            <Popover.Button as={Link} href={href} className="block py-2 text-zinc-800 dark:text-zinc-300 hover:text-teal-500 dark:hover:text-teal-500">
                 {children}
             </Popover.Button>
         </li>
-    )
+    );
 }
 
 /**

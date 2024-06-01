@@ -4,6 +4,8 @@ import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 /**
  * Home Page Metadata.
@@ -39,6 +41,10 @@ export default function RootLayout({
                         <Layout>{children}</Layout>
                     </div>
                 </Providers>
+
+                {/* Vercel speed insights and analytics (next) */}
+                <Analytics />
+                <SpeedInsights/>
             </body>
         </html>
     )

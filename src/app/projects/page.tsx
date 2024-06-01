@@ -71,7 +71,7 @@ export default function Projects() {
     return (
         <SimpleLayout
             title="Some projects I've built."
-            intro="I've built a fair share of projects for fun in my free time."
+            intro="I've built a few projects for fun in my free time."
         >
             <ul
                 role="list"

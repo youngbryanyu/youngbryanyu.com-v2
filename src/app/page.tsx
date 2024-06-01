@@ -98,7 +98,7 @@ export default function Home() {
                     {/* Introduction */}
                     <div className='animate__animated animate__fadeInUp'>
                         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                            I&apos;m Young, a software engineer who is interested in distributed systems, databases, and computing. I&apos;m currently pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I&apos;m based in San Francisco Bay Area. I&apos;m currently working at startup {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies.
+                            I&apos;m Young, a software engineer who is interested in distributed systems, databases, and cloud computing. I&apos;m currently pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I&apos;m based in San Francisco Bay Area. I&apos;m currently working at startup {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies.
                         </p>
                     </div>
 

@@ -48,7 +48,7 @@ const socials = [
 export const metadata: Metadata = {
     title: 'About',
     description:
-        'I’m Young Bryan Yu. I\'m a software engineer who is interested in distributed systems, databases, and computing. I am from San Francisco Bay Area.',
+        'I’m Young Bryan Yu. I\'m a software engineer who is interested in distributed systems, databases, and cloud computing. I am from San Francisco Bay Area.',
 }
 
 /**
@@ -89,7 +89,7 @@ export default function About() {
                                 I live in San Francisco Bay Area.
                             </p>
                             <p>
-                                I am interested in distributed systems, databases, and computing. Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well.
+                                I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well.
                             </p>
                             <p>
                                 I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.

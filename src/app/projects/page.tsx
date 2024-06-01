@@ -61,7 +61,7 @@ const projects = [
  */
 export const metadata: Metadata = {
     title: 'Projects',
-    description: 'Some projects I\'ve built',
+    description: 'I\'ve built a fair share of projects for fun in my free time.',
 };
 
 /**

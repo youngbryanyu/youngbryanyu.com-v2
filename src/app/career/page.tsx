@@ -187,7 +187,7 @@ export default function Career() {
         <>
             <SimpleLayout
                 title="My career so far."
-                intro="All my professional experiences and education so far, in chronological order. If you're curious, you can click on an experience to go to the organization's website."
+                intro="All my professional experiences and education so far, in chronological order. If you're curious, you can click on an experience to go to the corresponding organization's website."
             >
             </SimpleLayout>
             

@@ -10,7 +10,7 @@ import photography from '@/images/home/photography.jpg'
 import alviso from '@/images/home/alviso.jpg'
 import oregon from '@/images/home/oregon.jpg'
 import React from 'react'
-import { HoverSocialLink } from '@/components/SocialLinks' // Import HoverSocialLink
+import { HoverSocialLink } from '@/components/SocialLinks'
 import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 

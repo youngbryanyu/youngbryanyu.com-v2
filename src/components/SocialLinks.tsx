@@ -21,7 +21,7 @@ export function HoverSocialLink({
             <div className="group flex flex-col items-center">
                 <SimpleSocialLink href={href} aria-label={ariaLabel} icon={Icon} />
                 <div className="absolute top-8 flex items-center opacity-0 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100">
-                    <span className="ml-5 text-m text-zinc-600 dark:text-zinc-400">{label}</span>
+                    <span className="ml-5 text-sm font-medium text-zinc-600 dark:text-zinc-400">{label}</span>
                     <ChevronRightIcon className="h-5 w-5 stroke-zinc-600 dark:stroke-zinc-400" />
                 </div>
             </div>

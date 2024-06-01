@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         template: '%s - Young Bryan Yu',
 
         /* Title of the home page of the site on search engines */
-        default: 'Young Bryan Yu',
+        default: "Young Bryan Yu's Home Page",
     },
 
     /* This is the description under the title on search */

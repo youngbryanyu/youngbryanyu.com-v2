@@ -10,7 +10,7 @@ import photography from '@/images/home/photography.jpg'
 import alviso from '@/images/home/alviso.jpg'
 import oregon from '@/images/home/oregon.jpg'
 import React from 'react'
-import { SimpleSocialLink } from '@/components/SocialLinks'
+import { HoverSocialLink } from '@/components/SocialLinks' // Import HoverSocialLink
 import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 
@@ -22,21 +22,25 @@ const socials = [
         href: "https://www.linkedin.com/in/youngbryanyu/",
         ariaLabel: "Connect on LinkedIn",
         icon: LinkedInIcon,
+        label: "LinkedIn",
     },
     {
         href: "https://github.com/youngbryanyu",
         ariaLabel: "Connect on GitHub",
         icon: GitHubIcon,
+        label: "GitHub",
     },
     {
         href: "mailto:youngyu19@gmail.com",
         ariaLabel: "Connect through email",
         icon: EmailIcon,
+        label: "Email",
     },
     {
         href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
-        ariaLabel: "Connect through email",
+        ariaLabel: "Resume",
         icon: ResumeIcon,
+        label: "Resume",
     },
 ]
 
@@ -79,9 +83,6 @@ function Photos() {
 /**
  * The full home page.
  */
-/**
- * The full home page.
- */
 export default function Home() {
     return (
         <>
@@ -111,10 +112,11 @@ export default function Home() {
                                     animationDelay: `${index * 0.1}s` /* Stagger animations */
                                 }}
                             >
-                                <SimpleSocialLink
+                                <HoverSocialLink
                                     href={link.href}
-                                    aria-label={link.ariaLabel}
+                                    ariaLabel={link.ariaLabel} // TODO add aria label
                                     icon={link.icon}
+                                    label={link.label}
                                 />
                             </div>
                         ))}

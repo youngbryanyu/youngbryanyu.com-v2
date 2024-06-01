@@ -1,5 +1,6 @@
 import clsx from "clsx"
 import Link from "next/link"
+import { ChevronRightIcon } from "./Icons"
 
 /**
  * A simple social link with just the icon (e.g. LinkedIn, GitHub, email, etc).
@@ -47,4 +48,31 @@ export function VerboseSocialLink({
             </Link>
         </li>
     )
+}
+
+/**
+ * A social link shown that is made up of a simple social link plus text below it when hovered over.
+ */
+export function HoverSocialLink({
+    href,
+    ariaLabel,
+    icon: Icon,
+    label,
+}: {
+    href: string;
+    ariaLabel: string;
+    icon: React.ComponentType<{ className?: string }>;
+    label: string;
+}) {
+    return (
+        <div className="relative flex flex-col items-center">
+            <div className="group flex flex-col items-center">
+                <SimpleSocialLink href={href} aria-label={ariaLabel} icon={Icon} />
+                <div className="absolute top-8 flex items-center opacity-0 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100">
+                    <span className="ml-5 text-m text-zinc-600 dark:text-zinc-400">{label}</span>
+                    <ChevronRightIcon className="h-5 w-5 stroke-zinc-600 dark:stroke-zinc-400" />
+                </div>
+            </div>
+        </div>
+    );
 }

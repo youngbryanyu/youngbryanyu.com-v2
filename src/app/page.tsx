@@ -114,7 +114,7 @@ export default function Home() {
                             >
                                 <HoverSocialLink
                                     href={link.href}
-                                    ariaLabel={link.ariaLabel} // TODO add aria label
+                                    ariaLabel={link.ariaLabel}
                                     icon={link.icon}
                                     label={link.label}
                                 />

@@ -18,25 +18,30 @@ import 'animate.css' /* Need to import in this class or reload doesn't animate *
 const socials = [
     {
         href: "https://www.linkedin.com/in/youngbryanyu/",
+        ariaLabel: "Connect on LinkedIn",
         icon: LinkedInIcon,
         label: "LinkedIn",
     },
     {
         href: "https://github.com/youngbryanyu",
+        ariaLabel: "Connect on GitHub",
         icon: GitHubIcon,
         label: "GitHub",
     },
     {
         href: "mailto:youngyu19@gmail.com",
+        ariaLabel: "Connect through email",
         icon: EmailIcon,
-        label: "youngyu19@gmail.com",
+        label: "Email",
     },
     {
         href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
+        ariaLabel: "Resume",
         icon: ResumeIcon,
         label: "Resume",
     },
 ]
+
 /**
  * Page metadata.
  */
@@ -111,7 +116,7 @@ export default function About() {
                                 <VerboseSocialLink
                                     href={link.href}
                                     icon={link.icon}
-                                    aria-label={link.label} // TODO create aria label
+                                    aria-label={link.ariaLabel}
                                     className="mt-4"
                                 >
                                     {link.label}

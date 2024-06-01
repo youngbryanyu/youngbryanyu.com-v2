@@ -91,7 +91,7 @@ export default function Home() {
                     {/* Title */}
                     <div className='animate__animated animate__fadeInUp'>
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            Software engineer, photographer, and adventurer.
+                            Welcome to my home page.
                         </h1>
                     </div>
 

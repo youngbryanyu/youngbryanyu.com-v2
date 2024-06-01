@@ -19,3 +19,6 @@ npm run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Deployment (note to self)
+This repo is already connected to vercel, so pushing to the main branch will deploy to production on vercel, so no need to do `vercel && vercel --prod`.

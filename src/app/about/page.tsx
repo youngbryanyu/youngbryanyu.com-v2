@@ -95,7 +95,7 @@ export default function About() {
                                 I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
                             </p>
                             <p>
-                                When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven't had too much time for it lately.
+                                When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven&apos;t had too much time for it lately.
                             </p>
                         </div>
                     </div>

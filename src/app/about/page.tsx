@@ -60,7 +60,7 @@ export default function About() {
             <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
 
                 {/* Photo of me */}
-                <div className='animate__animated animate__fadeInRight'>
+                <div className='animate__animated animate__fadeInUp'>
                     <div className="lg:pl-20">
                         <div className="max-w-xs px-2.5 lg:max-w-none ">
                             <Image

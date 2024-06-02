@@ -39,6 +39,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+            <head>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
             <body className="flex h-full bg-zinc-50 dark:bg-black">
                 <Providers>
                     <div className="flex w-full">
@@ -53,3 +56,7 @@ export default function RootLayout({
         </html>
     )
 }
+
+/**
+ * Seems like everything in `/src/app` is accessably through the url just like `/public`.
+ */

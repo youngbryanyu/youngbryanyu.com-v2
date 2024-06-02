@@ -29,10 +29,8 @@ export const metadata: Metadata = {
             url: `${siteUrl}`
         }
     ],
-
     /* This is the description under the title on search */
     description: `I'm Young, a software engineer based in Silicon Valley who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. I'm currently working at startup KeyByte LLC on some cutting edge database and VM tuning technologies.`,
-
     keywords: [
         /* Name */
         'Young Bryan Yu',
@@ -68,7 +66,6 @@ export const metadata: Metadata = {
             rel: 'icon'
         }
     ],
-
     alternates: {
         canonical: `${siteUrl}`,
         types: {

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
     /* This is the description under the title on search */
     description: `I'm Young, a software engineer based in Silicon Valley who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. I'm currently working at startup KeyByte LLC on some cutting edge database and VM tuning technologies.`,
-    
+
     keywords: [
         /* Name */
         'Young Bryan Yu',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     },
     icons: [
         {
-            url: `${siteUrl}/favicon.ico`,
+            url: `${siteUrl}/favicon/favicon.ico`,
             rel: 'icon'
         }
     ],
@@ -92,7 +92,12 @@ export default function RootLayout({
     return (
         <html lang="en" className="h-full antialiased" suppressHydrationWarning>
             <head>
-                <link rel="icon" href="/favicon.ico" sizes="any" />
+                {/* Favicon */}
+                <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+                <link rel="manifest" href="/site.webmanifest" />
+                <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
             </head>
             <body className="flex h-full bg-zinc-50 dark:bg-black">
                 <Providers>

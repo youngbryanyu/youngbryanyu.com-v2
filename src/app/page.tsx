@@ -4,10 +4,9 @@ import 'animate.css' /* Need to import in this class or reload doesn't animate *
 
 import { Container } from '@/components/Container'
 import { EmailIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import chicago1 from '@/images/home/chicago.jpg'
 import sedona from '@/images/home/sedona.jpg'
 import photography from '@/images/home/photography.jpg'
-import alviso from '@/images/home/alviso.jpg'
+import alviso from '@/images/home/alviso2.jpg'
 import oregon from '@/images/home/oregon.jpg'
 import seattle from '@/images/home/seattle.jpg'
 import React from 'react'

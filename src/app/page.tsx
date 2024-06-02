@@ -9,6 +9,7 @@ import sedona from '@/images/home/sedona.jpg'
 import photography from '@/images/home/photography.jpg'
 import alviso from '@/images/home/alviso.jpg'
 import oregon from '@/images/home/oregon.jpg'
+import avatar from '@/images/avatar.jpg'
 import React from 'react'
 import { HoverSocialLink } from '@/components/SocialLinks'
 import { ResumeIcon } from '@/components/Icons'
@@ -26,7 +27,6 @@ const jsonLdData = {
     "logo": `${siteUrl}/images/avatar.jpg`,
     "url": `${siteUrl}`,
     "image": `${siteUrl}/images/avatar.jpg`,
-    
     "author": {
         "@type": "Person",
         "name": "Young Bryan Yu"
@@ -67,12 +67,12 @@ const socials = [
  * The photos section.
  */
 function Photos() {
-    let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
+    let rotations = ['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2'];
 
     return (
         <div className="mt-16 sm:mt-20">
             <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-                {[alviso, sedona, photography, oregon, chicago1].map((image, imageIndex) => (
+                {[alviso, avatar, sedona, photography, oregon].map((image, imageIndex) => (
                     /* Animation must be in parent container of image to not override rotations */
                     <div
                         key={image.src}
@@ -110,16 +110,6 @@ export default function Home() {
 
             <Container className="mt-9">
                 <div className="max-w-2xl">
-                    {/* Hidden Image Section (for search indexing)*/}
-                    <div style={{ display: 'none' }}>
-                        <Image
-                            src={'/images/avatar.jpg'}
-                            alt="Young Bryan Yu Avatar"
-                            width={200}
-                            height={200}
-                        />
-                    </div>
-
                     {/* Title */}
                     <div className='animate__animated animate__fadeInUp'>
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">

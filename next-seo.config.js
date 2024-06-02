@@ -5,12 +5,12 @@ export default {
     description: "Young Bryan Yu's Home Page",
     openGraph: {
       type: 'website',
-      url: 'https://youngbryanyu.com',
+      url: `${siteUrl}`,
       title: 'Young Bryan Yu',
       description: "Young Bryan Yu's Home Page",
       images: [
         {
-          url: 'https://youngbryanyu.com/avatar.jpg',
+          url: `${siteUrl}/avatar.jpg`,
           width: 800,
           height: 600,
           alt: 'Young Bryan Yu',
@@ -34,7 +34,7 @@ export default {
       "@type": "Person",
       "name": "Young Bryan Yu",
       "alternateName": "Young Yu",
-      "url": "https://youngbryanyu.com",
+      "url": `${siteUrl}`,
       "sameAs": [
         "https://www.linkedin.com/in/youngbryanyu",
         "https://www.github.com/youngbryanyu"

@@ -40,6 +40,7 @@ export const metadata: Metadata = {
         'Young',
         'Bryan',
         'Yu',
+        'youngbryanyu',
 
         /* Affiliations */
         'Software Engineer',

@@ -22,6 +22,6 @@ const JsonLd: React.FC<JsonLdProps> = ({ data }) => {
     );
 };
 
-// TODO: if new indexing doesn't work, move avatar image onto home page gallery. If doing that doesn't work,  edit comment above and let it be.
+// TODO: if new indexing doesn't work, move avatar image onto home page gallery (try hidden first). If doing that doesn't work,  edit comment above and let it be we can just remove json ld.
 
 export default JsonLd;

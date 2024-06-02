@@ -103,7 +103,7 @@ function Photos() {
 export default function Home() {
     return (
         <>
-        {/* TODO: remove if indexing avatar image doesn't change with it */}
+        {/* TODO: remove if indexing avatar image doesn't change with it (see LsonLd.tsx) */}
             <JsonLd data={jsonLdData} />
             
             <Container className="mt-9">

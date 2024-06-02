@@ -9,7 +9,7 @@ import sedona from '@/images/home/sedona.jpg'
 import photography from '@/images/home/photography.jpg'
 import alviso from '@/images/home/alviso.jpg'
 import oregon from '@/images/home/oregon.jpg'
-import avatar from '@/images/avatar.jpg'
+import seattle from '@/images/home/seattle.jpg'
 import React from 'react'
 import { HoverSocialLink } from '@/components/SocialLinks'
 import { ResumeIcon } from '@/components/Icons'
@@ -72,7 +72,7 @@ function Photos() {
     return (
         <div className="mt-16 sm:mt-20">
             <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-                {[alviso, avatar, sedona, photography, oregon].map((image, imageIndex) => (
+                {[alviso, seattle, sedona, photography, oregon].map((image, imageIndex) => (
                     /* Animation must be in parent container of image to not override rotations */
                     <div
                         key={image.src}

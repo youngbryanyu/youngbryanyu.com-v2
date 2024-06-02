@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: 'https://youngbryanyu.com/avatar.jpg',
+                url: `${siteUrl}/images/avatar.jpg`,
                 width: 800,
                 height: 600,
                 alt: 'Avatar - Young Bryan Yu'

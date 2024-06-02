@@ -62,11 +62,20 @@ export const metadata: Metadata = {
             }
         ]
     },
+    icons: [
+        {
+            url: `${siteUrl}/favicon.ico`,
+            rel: 'icon'
+        }
+    ],
+
     alternates: {
+        canonical: `${siteUrl}`,
         types: {
             'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
         },
     },
+    robots: 'index, follow',
 }
 
 /**

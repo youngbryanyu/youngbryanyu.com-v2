@@ -9,7 +9,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.webp'
+import avatarImage from '@/images/avatar.jpg'
 import { ChevronDownIcon, CloseIcon, MoonIcon, SunIcon } from './Icons'
 
 /**

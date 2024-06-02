@@ -6,7 +6,7 @@ import { Container } from '@/components/Container'
 import { EmailIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import sedona from '@/images/home/sedona.jpg'
 import photography from '@/images/home/photography.jpg'
-import alviso from '@/images/home/alviso2.jpg'
+import alviso from '@/images/home/alviso.jpg'
 import oregon from '@/images/home/oregon.jpg'
 import seattle from '@/images/home/seattle.jpg'
 import React from 'react'
@@ -23,9 +23,9 @@ const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Young Bryan Yu",
-    "logo": `${siteUrl}/images/avatar.webp`,
+    "logo": `${siteUrl}/images/avatar.jpg`,
     "url": `${siteUrl}`,
-    "image": `${siteUrl}/images/avatar.webp`,
+    "image": `${siteUrl}/images/avatar.jpg`,
     "author": {
         "@type": "Person",
         "name": "Young Bryan Yu"

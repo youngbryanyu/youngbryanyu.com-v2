@@ -78,7 +78,7 @@ export default function About() {
                     {/* Title */}
                     <div className='animate__animated animate__fadeInUp'>
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            A little more about me.
+                            A little bit about myself.
                         </h1>
                     </div>
 

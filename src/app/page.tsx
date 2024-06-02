@@ -103,7 +103,9 @@ function Photos() {
 export default function Home() {
     return (
         <>
+        {/* TODO: remove if indexing avatar image doesn't change with it */}
             <JsonLd data={jsonLdData} />
+            
             <Container className="mt-9">
                 <div className="max-w-2xl">
                     {/* Title */}

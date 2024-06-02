@@ -6,6 +6,7 @@ import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { url } from 'inspector'
 
 /**
  * Home Page Metadata.
@@ -19,9 +20,20 @@ export const metadata: Metadata = {
         /* Title of the home page of the site on search engines */
         default: "Young Bryan Yu",
     },
+    authors: [
+        {
+            name: "Young Bryan Yu",
+            url: `${siteUrl}`
+        },
+        {
+            name: "Young Yu",
+            url: `${siteUrl}`
+        }
+    ],
 
     /* This is the description under the title on search */
-    description: `I'm Young Bryan Yu, a software engineer who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. Some places I've worked include Amazon and startup KeyByte LLC.`,
+    description: `I'm Young, a software engineer based in Silicon Valley who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. I'm currently working at startup KeyByte LLC on some cutting edge database and VM tuning technologies.`,
+    
     keywords: [
         /* Name */
         'Young Bryan Yu',

@@ -15,6 +15,17 @@ import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 
 /**
+ * List of images
+ */
+const images = [
+    { src: alviso, alt: 'Alviso', priority: true },
+    { src: seattle, alt: 'Seattle', priority: true },
+    { src: sedona, alt: 'Sedona', priority: true },
+    { src: photography, alt: 'Photography', priority: true },
+    { src: oregon, alt: 'Oregon', priority: true },
+];
+
+/**
  * List of socials.
  */
 const socials = [
@@ -53,10 +64,10 @@ function Photos() {
     return (
         <div className="mt-16 sm:mt-20">
             <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-                {[alviso, seattle, sedona, photography, oregon].map((image, imageIndex) => (
+                {images.map((image, imageIndex) => (
                     /* Animation must be in parent container of image to not override rotations */
                     <div
-                        key={image.src}
+                        key={image.alt}
                         className="animate__animated animate__fadeInUp"
                         style={{ animationDelay: `${imageIndex * 0.1}s` }} /* Add delay for staggered effect */
                     >
@@ -67,12 +78,12 @@ function Photos() {
                             )}
                         >
                             <Image
-                                src={image}
-                                placeholder='blur'
-                                alt={`Home page gallery image ${imageIndex}`}
+                                src={image.src}
+                                placeholder="blur"
+                                alt={image.alt}
                                 sizes="(min-width: 640px) 18rem, 11rem"
                                 className="absolute inset-0 h-full w-full object-cover"
-                                priority={true}
+                                priority={image.priority}
                             />
                         </div>
                     </div>

@@ -12,6 +12,7 @@ import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 import 'animate.css' /* Need to import in this class or reload doesn't animate */
 
+
 /**
  * List of socials.
  */

@@ -4,9 +4,9 @@ import { Container } from '@/components/Container'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Link from 'next/link'
 
-import keybyteLogo from '@/images/career/keybyte.png'
-import amazonLogo from '@/images/career/amazon.jpg'
-import purdueLogo from '@/images/career/purdue.jpg'
+import keybyteLogo from '@/images/career/keybyte.webp'
+import amazonLogo from '@/images/career/amazon.webp'
+import purdueLogo from '@/images/career/purdue.webp'
 import React from 'react'
 
 import 'animate.css' /* Need to import in this class or reload doesn't animate */

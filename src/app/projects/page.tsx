@@ -61,8 +61,9 @@ const projects = [
  */
 export const metadata: Metadata = {
     title: 'Projects',
-    description: 'I\'ve built a fair share of projects for fun in my free time.',
+    description: "Check out some of the projects I've built in my free time.",
 };
+
 
 /**
  * The complete projects page.
@@ -70,8 +71,8 @@ export const metadata: Metadata = {
 export default function Projects() {
     return (
         <SimpleLayout
-            title="Some projects I've built."
-            intro="I've built a few projects for fun in my free time."
+            title="Projects I've built."
+            intro="Check out some of the projects I've built in my free time."
         >
             <ul
                 role="list"

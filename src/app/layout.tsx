@@ -10,6 +10,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 /**
  * Home Page Metadata.
  */
+let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://youngbryanyu.com';
 export const metadata: Metadata = {
     title: {
         /* Title of every page in the format `<title> - Young Bryan Yu`*/
@@ -21,7 +22,34 @@ export const metadata: Metadata = {
 
     /* This is the description under the title on search */
     description: `I'm Young Bryan Yu, a software engineer who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. Some places I've worked include Amazon and startup KeyByte LLC.`,
+    keywords: [
+        /* Name */
+        'Young Bryan Yu',
+        'Young Yu',
+        'Young',
+        'Bryan',
+        'Yu',
 
+        /* Affiliations */
+        'Software Engineer',
+        'Purdue University',
+        'Amazon',
+        'KeyByte LLC'
+    ],
+    openGraph: {
+        title: 'Projects - Young Bryan Yu',
+        description: "Check out some of the projects I've built in my free time.",
+        url: `${siteUrl}`,
+        type: 'website',
+        images: [
+            {
+                url: 'https://youngbryanyu.com/avatar.jpg',
+                width: 800,
+                height: 600,
+                alt: 'Avatar - Young Bryan Yu'
+            }
+        ]
+    },
     alternates: {
         types: {
             'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

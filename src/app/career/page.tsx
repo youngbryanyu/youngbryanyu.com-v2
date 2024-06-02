@@ -16,7 +16,7 @@ import 'animate.css' /* Need to import in this class or reload doesn't animate *
  */
 export const metadata: Metadata = {
     title: 'Career',
-    description: 'All my professional experiences and education so far, in chronological order. Click on an experience to go to the organization\'s website.',
+    description: "All my professional experiences and education so far, in chronological order. If you're curious, you can click on an entry to go to the organization's website.",
 }
 
 /**

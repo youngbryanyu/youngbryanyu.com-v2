@@ -7,7 +7,7 @@ import {
     GitHubIcon,
     LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/about/portrait.jpg'
+import headshot from '@/images/about/headshot.jpg'
 import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 import 'animate.css' /* Need to import in this class or reload doesn't animate */
@@ -63,8 +63,8 @@ export default function About() {
                     <div className="lg:pl-20">
                         <div className="max-w-xs px-2.5 lg:max-w-none ">
                             <Image
-                                src={portraitImage}
-                                alt=""
+                                src={headshot}
+                                alt="Young Bryan Yu Headshot"
                                 sizes="(min-width: 1024px) 32rem, 20rem"
                                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                                 priority={true}

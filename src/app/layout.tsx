@@ -6,7 +6,6 @@ import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { url } from 'inspector'
 
 /**
  * Home Page Metadata.
@@ -75,7 +74,10 @@ export const metadata: Metadata = {
             'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
         },
     },
-    robots: 'index, follow',
+    robots: {
+        index: true,
+        follow: true
+    },
 }
 
 /**

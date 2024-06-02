@@ -10,18 +10,18 @@ interface JsonLdProps {
 }
 
 /**
- * JSON-LD component for better indexing. This may offer more control over certain things in search indexing like the image to display along with the search result.
+ * JSON-LD component for SEO.
  */
 const JsonLd: React.FC<JsonLdProps> = ({ data }) => {
     return (
         <Head>
-            <script type="application/ld+json">
-                {JSON.stringify(data)}
-            </script>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+            />
+
         </Head>
     );
 };
-
-// TODO: if new indexing doesn't work with JsonLd, delete it, then let it be (oh well, still looks nice).
 
 export default JsonLd;

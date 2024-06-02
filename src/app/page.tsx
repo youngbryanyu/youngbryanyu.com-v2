@@ -18,11 +18,11 @@ import { LinkedText } from '@/components/Links'
  * List of images
  */
 const images = [
-    { src: alviso, alt: 'Alviso', priority: true },
-    { src: seattle, alt: 'Seattle', priority: true },
-    { src: sedona, alt: 'Sedona', priority: true },
-    { src: photography, alt: 'Photography', priority: true },
-    { src: oregon, alt: 'Oregon', priority: true },
+    { src: alviso, alt: 'Alviso', priority: true }, /* Slower, load with priority */
+    { src: seattle, alt: 'Seattle', priority: false },
+    { src: sedona, alt: 'Sedona', priority: true }, /* Slower, load with priority */
+    { src: photography, alt: 'Photography', priority: false },
+    { src: oregon, alt: 'Oregon', priority: false },
 ];
 
 /**

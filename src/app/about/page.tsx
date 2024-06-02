@@ -69,7 +69,6 @@ export default function About() {
                                 alt="Young Bryan Yu Headshot"
                                 sizes="(min-width: 1024px) 32rem, 20rem"
                                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                                priority={true} /* Slow, load with priority*/
                             />
                         </div>
                     </div>

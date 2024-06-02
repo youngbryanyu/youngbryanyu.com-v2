@@ -18,11 +18,11 @@ import { LinkedText } from '@/components/Links'
  * List of images
  */
 const images = [
-    { src: alviso, alt: 'Alviso', priority: true }, /* Slower, load with priority */
-    { src: seattle, alt: 'Seattle', priority: false },
-    { src: sedona, alt: 'Sedona', priority: true }, /* Slower, load with priority */
-    { src: photography, alt: 'Photography', priority: false },
-    { src: oregon, alt: 'Oregon', priority: false },
+    { src: alviso, alt: 'Alviso' },
+    { src: seattle, alt: 'Seattle' },
+    { src: sedona, alt: 'Sedona' },
+    { src: photography, alt: 'Photography' },
+    { src: oregon, alt: 'Oregon' },
 ];
 
 /**
@@ -83,7 +83,6 @@ function Photos() {
                                 alt={image.alt}
                                 sizes="(min-width: 640px) 18rem, 11rem"
                                 className="absolute inset-0 h-full w-full object-cover"
-                                priority={image.priority}
                             />
                         </div>
                     </div>

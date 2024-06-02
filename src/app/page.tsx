@@ -23,8 +23,10 @@ const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Young Bryan Yu",
+    "logo": `${siteUrl}/images/avatar.jpg`,
     "url": `${siteUrl}`,
     "image": `${siteUrl}/images/avatar.jpg`,
+    
     "author": {
         "@type": "Person",
         "name": "Young Bryan Yu"
@@ -85,7 +87,7 @@ function Photos() {
                         >
                             <Image
                                 src={image}
-                                alt=""
+                                alt={`Home page gallery image ${imageIndex}`}
                                 sizes="(min-width: 640px) 18rem, 11rem"
                                 className="absolute inset-0 h-full w-full object-cover"
                             />
@@ -103,11 +105,21 @@ function Photos() {
 export default function Home() {
     return (
         <>
-        {/* TODO: remove if indexing avatar image doesn't change with it (see LsonLd.tsx) */}
+            {/* TODO: remove if indexing avatar image doesn't change with it (see LsonLd.tsx) */}
             <JsonLd data={jsonLdData} />
-            
+
             <Container className="mt-9">
                 <div className="max-w-2xl">
+                    {/* Hidden Image Section (for search indexing)*/}
+                    <div style={{ display: 'none' }}>
+                        <Image
+                            src={'/images/avatar.jpg'}
+                            alt="Young Bryan Yu Avatar"
+                            width={200}
+                            height={200}
+                        />
+                    </div>
+
                     {/* Title */}
                     <div className='animate__animated animate__fadeInUp'>
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">

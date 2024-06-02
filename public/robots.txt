@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://youngbryanyu.com
+Host: https://www.youngbryanyu.com
 
 # Sitemaps
-Sitemap: https://youngbryanyu.com/sitemap.xml
+Sitemap: https://www.youngbryanyu.com/sitemap.xml

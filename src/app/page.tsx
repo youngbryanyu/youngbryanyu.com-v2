@@ -23,9 +23,9 @@ const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Young Bryan Yu",
-    "logo": `${siteUrl}/images/avatar.jpg`,
+    "logo": `${siteUrl}/images/avatar.webp`,
     "url": `${siteUrl}`,
-    "image": `${siteUrl}/images/avatar.jpg`,
+    "image": `${siteUrl}/images/avatar.webp`,
     "author": {
         "@type": "Person",
         "name": "Young Bryan Yu"

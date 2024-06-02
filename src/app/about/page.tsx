@@ -7,7 +7,7 @@ import {
     GitHubIcon,
     LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/about/portrait.jpg'
+import portraitImage from '@/images/about/portrait.webp'
 import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 import 'animate.css' /* Need to import in this class or reload doesn't animate */

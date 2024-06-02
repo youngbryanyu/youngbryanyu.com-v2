@@ -10,7 +10,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 /**
  * Home Page Metadata.
  */
-let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://youngbryanyu.com';
+let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.youngbryanyu.com';
 export const metadata: Metadata = {
     title: {
         /* Title of every page in the format `<title> - Young Bryan Yu`*/

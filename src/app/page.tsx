@@ -13,6 +13,23 @@ import React from 'react'
 import { HoverSocialLink } from '@/components/SocialLinks'
 import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
+import JsonLd from '@/components/JsonLd'
+
+/**
+ * JSON-LD data. We want to have the avatar image indexed to be shown in search.
+ */
+let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.youngbryanyu.com';
+const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Young Bryan Yu",
+    "url": `${siteUrl}`,
+    "image": `${siteUrl}/images/avatar.jpg`,
+    "author": {
+        "@type": "Person",
+        "name": "Young Bryan Yu"
+    }
+};
 
 /**
  * List of socials.
@@ -86,6 +103,7 @@ function Photos() {
 export default function Home() {
     return (
         <>
+            <JsonLd data={jsonLdData} />
             <Container className="mt-9">
                 <div className="max-w-2xl">
                     {/* Title */}

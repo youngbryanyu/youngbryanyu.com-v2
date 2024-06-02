@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://youngbryanyu.com',
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.youngbryanyu.com',
     generateRobotsTxt: true,
 
     /* Unused pages to exclude */

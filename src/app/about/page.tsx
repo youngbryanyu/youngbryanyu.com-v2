@@ -48,7 +48,7 @@ const socials = [
 export const metadata: Metadata = {
     title: 'About',
     description:
-        "I'm Young Bryan Yu. I grew up in San Francisco Bay Area (more precisely, Silicon Valley, home of Apple). I was born in Montana (middle of nowhere), but my family moved to California when I was around 5. I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at Purdue University. I received my BS in Computer Science from Purdue University as well.  I am currently working at startup at KeyByte LLC on database and VM tuning technologies. I have also worked at Amazon building services for Alexa devices. When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven't had too much time for it lately.",
+        "I'm Young Bryan Yu. I grew up in San Francisco Bay Area (more precisely, Silicon Valley, home of Apple). I was born in Montana (middle of nowhere), but my family moved to California when I was around 5. I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at Purdue University. I received my BS in Computer Science from Purdue University as well.  I am currently working at startup at KeyByte LLC on some cutting edge database and VM tuning technologies. I have also worked at Amazon building services for Alexa devices. When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven't had too much time for it lately.",
 }
 
 /**
@@ -91,7 +91,7 @@ export default function About() {
                                 I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well.
                             </p>
                             <p>
-                                I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
+                                I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
                             </p>
                             <p>
                                 When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven&apos;t had too much time for it lately.

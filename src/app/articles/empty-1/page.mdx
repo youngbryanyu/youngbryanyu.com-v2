@@ -1,0 +1,26 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import chicago from './chicago2.jpg'
+
+export const article = {
+  author: 'Young Bryan Yu',
+  date: '2022-06-29',
+  title: 'TITLE',
+  description:
+    'Description!',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Description!
+
+<Image src={chicago} alt="" />
+
+# Section...
+TODO...
+

@@ -5,6 +5,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Link from 'next/link'
 
 import keybyteLogo from '@/images/career/keybyte.png'
+import stealthLogo from '@/images/career/stealth.jpg'
 import amazonLogo from '@/images/career/amazon.jpg'
 import purdueLogo from '@/images/career/purdue.jpg'
 import React from 'react'
@@ -104,12 +105,15 @@ function Role({ role }: { role: Role }) {
 function Experience() {
     let resume: Array<Role> = [
         {
-            company: 'KeyByte LLC',
+            company: 'Stealth Startup',
+            // company: 'KeyByte LLC',
             title: 'Software Engineer Intern',
-            logo: keybyteLogo,
+            logo: stealthLogo,
+            // logo: keybyteLogo
             time: 'Summer 2024',
-            description: 'Working on OptimusCloud',
-            link: 'https://www.keybyte.xyz'
+            description: 'Building the MVP',
+            link: 'https://www.linkedin.com/company/stealth-startup-51/'
+            // link: 'https://www.keybyte.xyz'
         },
         {
             company: 'Amazon',

@@ -93,7 +93,7 @@ export default function About() {
                                 I am interested in distributed systems, databases, and cloud computing. Currently, I am pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I received my BS in Computer Science from Purdue University as well.
                             </p>
                             <p>
-                                I am currently working at startup at {LinkedText("KeyByte LLC", "https://www.keybyte.xyz")} on some cutting edge database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
+                                I am currently working at startup at a stealth startup on some cutting edge distributed-database and VM tuning technologies. I have also worked at {LinkedText("Amazon", "https://www.amazon.com")} building services for Alexa devices.
                             </p>
                             <p>
                                 When I am not working I enjoy working out and playing all kinds of sports. I also enjoy reading and dabble in poker. I love traveling and trying new foods. I used to do photography but the busyness of life has gotten to me and I haven&apos;t had too much time for it lately.

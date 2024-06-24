@@ -48,7 +48,7 @@ const socials = [
         label: "Email",
     },
     {
-        href: "https://drive.google.com/file/d/1p-FvixBI4vU1n9HNTT0J_pcvMgQ7EQg-/view?usp=sharing",
+        href: "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view",
         ariaLabel: "Resume",
         icon: ResumeIcon,
         label: "Resume",

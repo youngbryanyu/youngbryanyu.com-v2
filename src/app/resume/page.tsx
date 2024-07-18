@@ -76,7 +76,7 @@ export default function Resume() {
                             href="https://www.linkedin.com/company/stealth-startup-51/"
                             title="Software Engineer"
                             organization="Stealth Startup" // KeyByte LLC
-                            summary="Building a service to dynamically reconfigure heterogeneous database clusters in the cloud for optimal performance and cost with no downtime"
+                            summary="Building an automated NoSQL database tuning service to maximize performance and minimize cost with no downtime"
                             descriptionList={[
                                 "Led the design and development of a backend orchestration service to process trace data from database clusters, predict future workload patterns, determine optimal cluster configurations, and dynamically apply database/VM reconfigurations to database clusters running on EC2 with no downtime. Decoupled scheduling and execution of reconfigurations using a Redis queue, handled I/O-bound tasks asynchronously, and used micro batch processing to maximize throughput.",
                                 "Built a CI/CD pipeline to automate unit testing, building/tagging/pushing Docker images, rolling deployments of Docker containers, and infrastructure management. Parallelized builds and leveraged an external cache with BuildKit for faster builds. Processed commits in batches, parallelized independent pipeline steps, and cached dependencies to improve build times.",

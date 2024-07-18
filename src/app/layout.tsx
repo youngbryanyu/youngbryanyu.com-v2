@@ -37,6 +37,7 @@ export const metadata: Metadata = {
         'KeyByte LLC'
     ],
     alternates: {
+        canonical: `${siteUrl}`,
         types: {
             'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
         },

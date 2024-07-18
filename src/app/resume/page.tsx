@@ -6,7 +6,6 @@ import { SimpleLayoutWithLinks } from '@/components/SimpleLayoutWithLinks'
 import Link from 'next/link'
 import { LinkedText, LinkedTextTeal } from '@/components/Links'
 import { ChevronRightIcon } from '@/components/Icons'
-import Head from 'next/head'
 
 /**
  * The speaking section page in the template. Currently unused.
@@ -53,22 +52,14 @@ function Position({
 }
 
 /* Page metadata */
-let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.youngbryanyu.com';
 export const metadata: Metadata = {
     title: 'Resume',
     description:
         'A detailed resume describing my professional experiences. Check out the PDF version.',
-        alternates: {
-            canonical: `${siteUrl}/resume`,
-        },
 }
 
 export default function Resume() {
     return (
-        <>
-        <Head>
-        <link rel="canonical" href="https://youngbryanyu.com/resume" />
-      </Head>
         <SimpleLayoutWithLinks
             title="My resume."
             intro={
@@ -131,6 +122,5 @@ export default function Resume() {
                 </div>
             </div>
         </SimpleLayoutWithLinks>
-        </>
     )
 }

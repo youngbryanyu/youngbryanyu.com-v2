@@ -56,11 +56,6 @@ export const metadata: Metadata = {
     title: 'Resume',
     description:
         'A detailed resume describing my professional experiences. Check out the PDF version.',
-    openGraph: {
-        title: 'Resume',
-        description: 'A detailed resume describing my professional experiences. Check out the PDF version.',
-        url: 'https://youngbryanyu.com/resume',
-    },
 }
 
 export default function Resume() {

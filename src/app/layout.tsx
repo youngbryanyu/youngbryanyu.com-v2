@@ -21,66 +21,66 @@ export const metadata: Metadata = {
     },
     /* This is the description under the title on search */
     description: `I'm Young, a software engineer based in Silicon Valley who is interested in distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. I'm currently working at a stealth-mode startup on some cutting edge database and VM tuning technologies.`,
-    authors: [
-        {
-            name: "Young Bryan Yu",
-            url: `${siteUrl}`
-        },
-        {
-            name: "Young Yu",
-            url: `${siteUrl}`
-        }
-    ],
-    keywords: [
-        /* Name */
-        'Young Bryan Yu',
-        'Young Yu',
-        'Young',
-        'Bryan',
-        'Yu',
-        'youngbryanyu',
+    // authors: [
+    //     {
+    //         name: "Young Bryan Yu",
+    //         url: `${siteUrl}`
+    //     },
+    //     {
+    //         name: "Young Yu",
+    //         url: `${siteUrl}`
+    //     }
+    // ],
+    // keywords: [
+    //     /* Name */
+    //     'Young Bryan Yu',
+    //     'Young Yu',
+    //     'Young',
+    //     'Bryan',
+    //     'Yu',
+    //     'youngbryanyu',
 
-        /* Affiliations */
-        'Software Engineer',
-        'Purdue University',
-        'Amazon',
-        'KeyByte LLC'
-    ],
-    openGraph: {
-        title: {
-            /* Title of every page in the format `<title> - Young Bryan Yu` */
-            template: '%s - Young Bryan Yu',
-            /* Default title for Open Graph when no specific title is set */
-            default: 'Young Bryan Yu',
-        },
-        description: "Young Bryan Yu's Home Page.",
-        url: `${siteUrl}`,
-        type: 'website',
-        images: [
-            {
-                url: `${siteUrl}/images/avatar.jpg`,
-                width: 800,
-                height: 600,
-                alt: 'Avatar - Young Bryan Yu'
-            }
-        ]
-    },
-    icons: [
-        {
-            url: `${siteUrl}/favicon/favicon.ico`,
-            rel: 'icon'
-        }
-    ],
+    //     /* Affiliations */
+    //     'Software Engineer',
+    //     'Purdue University',
+    //     'Amazon',
+    //     'KeyByte LLC'
+    // ],
+    // openGraph: {
+    //     title: {
+    //         /* Title of every page in the format `<title> - Young Bryan Yu` */
+    //         template: '%s - Young Bryan Yu',
+    //         /* Default title for Open Graph when no specific title is set */
+    //         default: 'Young Bryan Yu',
+    //     },
+    //     description: "Young Bryan Yu's Home Page.",
+    //     url: `${siteUrl}`,
+    //     type: 'website',
+    //     images: [
+    //         {
+    //             url: `${siteUrl}/images/avatar.jpg`,
+    //             width: 800,
+    //             height: 600,
+    //             alt: 'Avatar - Young Bryan Yu'
+    //         }
+    //     ]
+    // },
+    // icons: [
+    //     {
+    //         url: `${siteUrl}/favicon/favicon.ico`,
+    //         rel: 'icon'
+    //     }
+    // ],
     alternates: {
-        canonical: `${siteUrl}`,
+        // canonical: `${siteUrl}`,
         types: {
             'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
         },
     },
-    robots: {
-        index: true,
-        follow: true
-    },
+    // robots: {
+    //     index: true,
+    //     follow: true
+    // },
 }
 
 /**

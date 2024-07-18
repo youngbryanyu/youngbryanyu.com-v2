@@ -48,11 +48,11 @@ const socials = [
         label: "Email",
     },
     {
-        href: "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view",
+        href: `/resume`,
         ariaLabel: "Resume",
         icon: ResumeIcon,
         label: "Resume",
-    },
+    }
 ]
 
 /**

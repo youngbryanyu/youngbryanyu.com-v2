@@ -81,6 +81,7 @@ function MobileNavigation(
                                 <MobileNavItem href="/">Home</MobileNavItem>
                                 <MobileNavItem href="/about">About</MobileNavItem>
                                 <MobileNavItem href="/career">Career</MobileNavItem>
+                                <MobileNavItem href="/resume">Resume</MobileNavItem>
                                 <MobileNavItem href="/projects">Projects</MobileNavItem>
                             </ul>
                         </nav>
@@ -133,6 +134,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="/about">About</NavItem>
                 <NavItem href="/career">Career</NavItem>
+                <NavItem href="/resume">Resume</NavItem>
                 <NavItem href="/projects">Projects</NavItem>
             </ul>
         </nav>

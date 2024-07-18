@@ -12,7 +12,6 @@ import { ResumeIcon } from '@/components/Icons'
 import { LinkedText } from '@/components/Links'
 import 'animate.css' /* Need to import in this class or reload doesn't animate */
 
-
 /**
  * List of socials.
  */
@@ -36,11 +35,11 @@ const socials = [
         label: "Email",
     },
     {
-        href: "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view",
+        href: `/resume`,
         ariaLabel: "Resume",
         icon: ResumeIcon,
         label: "Resume",
-    },
+    }
 ]
 
 /**

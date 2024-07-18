@@ -64,6 +64,10 @@ export const metadata: Metadata = {
 
 export default function Resume() {
     return (
+        <>
+        <Head>
+        <link rel="canonical" href="https://youngbryanyu.com/resume" />
+      </Head>
         <SimpleLayoutWithLinks
             title="My resume."
             intro={
@@ -126,5 +130,6 @@ export default function Resume() {
                 </div>
             </div>
         </SimpleLayoutWithLinks>
+        </>
     )
 }

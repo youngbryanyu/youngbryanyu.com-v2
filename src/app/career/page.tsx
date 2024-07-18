@@ -80,7 +80,7 @@ function Role({ role }: { role: Role }) {
 
                         {/* The company */}
                         <dt className="sr-only">Company</dt>
-                        <dd className="flex items-center w-full text-sm text-zinc-900 dark:text-zinc-100 mt-0.5 transition group-hover:text-teal-500 font-normal">
+                        <dd className="flex items-center w-full text-sm text-zinc-900 dark:text-zinc-100 mt-0.5 transition group-hover:text-teal-500 font-medium">
                             {role.company}
                             {/* <ChevronRightIcon className="ml-0 h-4 w-4 stroke-current" /> */}
                         </dd>

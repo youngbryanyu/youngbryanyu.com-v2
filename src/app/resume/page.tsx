@@ -52,7 +52,7 @@ function Position({
 }
 
 export const metadata: Metadata = {
-    title: 'My resume.',
+    title: 'Resume.',
     description:
         'A detailed resume describing my professional experiences. Check out the PDF version.',
 }

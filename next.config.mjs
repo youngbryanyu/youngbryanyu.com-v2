@@ -5,6 +5,21 @@ import remarkGfm from 'remark-gfm'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  async redirects() {
+    return [
+      {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'resume.youngbryanyu.com',
+          },
+        ],
+        destination: '/resume',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 const withMDX = nextMDX({

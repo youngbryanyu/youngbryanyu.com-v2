@@ -72,9 +72,29 @@ Card.Subtitle = function CardSubtitle({
     children: React.ReactNode
 }) {
     return (
-        <p className="relative z-10 font-medium mt-0 text-sm text-zinc-800 dark:text-zinc-100 transition group-hover:text-teal-500">
-            {children}
-        </p>
+        <>
+            <p className="relative z-10 font-medium mt-0 text-sm text-zinc-800 dark:text-zinc-100 transition group-hover:text-teal-500">
+                {children}
+            </p>
+        </>
+    )
+}
+
+/**
+ * Subtitle of a card with right facing chevron.
+ */
+Card.SubtitleWithChevron = function CardSubtitleWithChevron({
+    children,
+}: {
+    children: React.ReactNode
+}) {
+    return (
+        <div className="relative z-10 flex items-center text-sm font-medium text-zinc-800 dark:text-zinc-100 transition group-hover:text-teal-500">
+            <p className="mr-0">
+                {children}
+            </p>
+            <ChevronRightIcon className="h-4 w-4 stroke-current" />
+        </div>
     )
 }
 

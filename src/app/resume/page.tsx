@@ -6,6 +6,7 @@ import { SimpleLayoutWithLinks } from '@/components/SimpleLayoutWithLinks'
 import Link from 'next/link'
 import { LinkedText, LinkedTextTeal } from '@/components/Links'
 import { ChevronRightIcon } from '@/components/Icons'
+import Head from 'next/head'
 
 /**
  * The speaking section page in the template. Currently unused.

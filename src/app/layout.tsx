@@ -47,8 +47,13 @@ export const metadata: Metadata = {
         'KeyByte LLC'
     ],
     openGraph: {
-        title: 'Projects - Young Bryan Yu',
-        description: "Check out some of the projects I've built in my free time.",
+        title: {
+            /* Title of every page in the format `<title> - Young Bryan Yu` */
+            template: '%s - Young Bryan Yu',
+            /* Default title for Open Graph when no specific title is set */
+            default: 'Young Bryan Yu',
+        },
+        description: "Young Bryan Yu's Home Page.",
         url: `${siteUrl}`,
         type: 'website',
         images: [

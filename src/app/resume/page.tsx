@@ -51,10 +51,18 @@ function Position({
     )
 }
 
+/* Page metadata */
+let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.youngbryanyu.com';
 export const metadata: Metadata = {
     title: 'Resume',
     description:
         'A detailed resume describing my professional experiences. Check out the PDF version.',
+    openGraph: {
+        title: 'Resume',
+        description: 'A detailed resume describing my professional experiences. Check out the PDF version.',
+        url: `${siteUrl}/resume`,
+        type: 'website',
+    },
 }
 
 export default function Resume() {
@@ -63,8 +71,8 @@ export default function Resume() {
             title="My resume."
             intro={
                 <>
-                    A detailed resume describing my professional experiences. 
-                    <br/> 
+                    A detailed resume describing my professional experiences.
+                    <br />
                     {LinkedTextTeal("PDF Version", "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view")}
                 </>
             }

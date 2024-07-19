@@ -195,7 +195,7 @@ export default function Career() {
                 title="My career so far."
                 intro={
                     <>
-                        All my professional experiences and education so far, in chronological order. If you're curious, you can click on an entry to go to the organization's website. For more details about my career experiences, check out my {LinkedText({ text: "resume", link: "/resume", newTab: false })}.
+                        All my professional experiences and education so far, in chronological order. If you&apos;re curious, you can click on an entry to go to the organization&apos;s website. For more details about my career experiences, check out my {LinkedText({ text: "resume", link: "/resume", newTab: false })}.
                     </>
                 }
             >

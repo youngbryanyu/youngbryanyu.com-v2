@@ -4,6 +4,8 @@ import { SimpleLayoutWithLinks } from '@/components/SimpleLayoutWithLinks'
 import { LinkedTextTeal } from '@/components/Links'
 import { experiences, educations, Position } from '@/app/resume/data'
 
+const RESUME_PDF_URL = "https://drive.google.com/file/d/1zi98hgnpcQOkYoDKF2slIy1CUH3AezyY/view?usp=drive_link"
+
 /**
  * A position component.
  */
@@ -56,7 +58,7 @@ export default function Resume() {
                 <>
                     A detailed resume describing my professional experiences.
                     <br />
-                    {LinkedTextTeal({ text: "PDF Version", link: "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view" })}
+                    {LinkedTextTeal({ text: "PDF Version", link: RESUME_PDF_URL })}
                 </>
             }
         >

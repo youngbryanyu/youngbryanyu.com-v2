@@ -40,7 +40,7 @@ export const experiences: Position[] = [
         organization: "Amazon",
         summaryList: ["Alexa Food"],
         descriptionList: [
-            "Designed and developed a backend microservice to automate data cleaning data across multiple databases through a decoupled event-driven orchestration workflow, resulting in a 99.97% increase in data cleaning speed, data quality improvement, and better recipe recommendations. Implemented the service's infrastructure (with IaC), CI/CD pipeline, business logic, unit tests, monitoring, and documentation.",
+            "Designed and developed a backend service to automate data cleaning data across multiple databases through a decoupled event-driven orchestration workflow, resulting in a 99.97% increase in data cleaning speed, data quality improvement, and better recipe recommendations. Implemented the service's infrastructure (with IaC), CI/CD pipeline, business logic, unit tests, monitoring, and documentation.",
             "Migrated the team's AWS CDK utility library from the deprecated AWS CDK v1 to the latest AWS CDK v2, ensuring the utility library was up to date with AWS CDK v2 while maintaining continued support for existing services using AWS CDK v1.",
             "Technologies: AWS, CloudFormation, CloudWatch, DynamoDB, Elasticsearch, Git, Gradle, IAM, Java, Kibana, Lambda, Node.js, S3, SQS, Step Functions, TypeScript"
         ],

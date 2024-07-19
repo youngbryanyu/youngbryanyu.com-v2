@@ -52,6 +52,7 @@ const socials = [
         ariaLabel: "Resume",
         icon: ResumeIcon,
         label: "Resume",
+        newTab: false,
     }
 ]
 
@@ -110,7 +111,7 @@ export default function Home() {
                     {/* Introduction */}
                     <div className='animate__animated animate__fadeInUp'>
                         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                            I&apos;m Young, a software engineer based in Silicon Valley who is interested in distributed systems, databases, and cloud computing. I&apos;m currently pursuing a MS in Computer Science at {LinkedText("Purdue University", "https://www.purdue.edu")}. I&apos;m currently working at a stealth startup on some cutting edge distributed-database and VM tuning technologies.
+                            I&apos;m Young, a software engineer based in Silicon Valley who is interested in distributed systems, databases, and cloud computing. I&apos;m currently pursuing a MS in Computer Science at {LinkedText({ text: "Purdue University", link: "https://www.purdue.edu", })}. I&apos;m currently working at a stealth startup on some cutting edge distributed-database and VM tuning technologies.
                         </p>
                     </div>
 
@@ -129,6 +130,7 @@ export default function Home() {
                                     ariaLabel={link.ariaLabel}
                                     icon={link.icon}
                                     label={link.label}
+                                    newTab={link.newTab}
                                 />
                             </div>
                         ))}

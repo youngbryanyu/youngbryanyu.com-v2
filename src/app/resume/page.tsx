@@ -25,8 +25,8 @@ function PositionComponent({
                 <Card.Subtitle>{organization}</Card.Subtitle>
 
                 {/* Position Summary */}
-                <Card.DescriptionList items={summaryList}/>
-                
+                <Card.DescriptionList items={summaryList} />
+
                 {/* Position Descriptions */}
                 <Card.DescriptionBulletList items={descriptionList} />
             </Card>
@@ -56,7 +56,7 @@ export default function Resume() {
                 <>
                     A detailed resume describing my professional experiences.
                     <br />
-                    {LinkedTextTeal("PDF Version", "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view")}
+                    {LinkedTextTeal({ text: "PDF Version", link: "https://drive.google.com/file/d/19htqvv_xU_dVxawwc3YR0-TiMeeHV8Vr/view" })}
                 </>
             }
         >

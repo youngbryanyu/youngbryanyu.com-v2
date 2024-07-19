@@ -11,6 +11,8 @@ import purdueLogo from '@/images/career/purdue.jpg'
 import React from 'react'
 
 import 'animate.css' /* Need to import in this class or reload doesn't animate */
+import { SimpleLayoutWithLinks } from '@/components/SimpleLayoutWithLinks'
+import { LinkedText } from '@/components/Links'
 
 /**
  * Page metadata.
@@ -189,9 +191,13 @@ function Education() {
 export default function Career() {
     return (
         <>
-            <SimpleLayout
+            <SimpleLayoutWithLinks
                 title="My career so far."
-                intro="All my professional experiences and education so far, in chronological order. If you're curious, you can click on an entry to go to the organization's website."
+                intro={
+                    <>
+                        All my professional experiences and education so far, in chronological order. If you're curious, you can click on an entry to go to the organization's website. For more details about my career experiences, check out my {LinkedText({ text: "resume", link: "/resume", newTab: false })}.
+                    </>
+                }
             >
                 {/* Experience Section */}
                 <div className='animate__animated animate__fadeInUp'>
@@ -210,7 +216,7 @@ export default function Career() {
                         </div>
                     </Container>
                 </div>
-            </SimpleLayout>
+            </SimpleLayoutWithLinks>
         </>
     )
 }

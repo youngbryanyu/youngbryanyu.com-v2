@@ -157,7 +157,7 @@ function Education() {
             title: 'MS, Computer Science',
             logo: purdueLogo,
             time: '2024 - 2026',
-            link: 'https://www.purdue.edu'
+            link: 'https://www.cs.purdue.edu'
         },
         {
             company: 'Purdue University',
@@ -165,7 +165,7 @@ function Education() {
             logo: purdueLogo,
             time: '2020 - 2023',
             description: 'Certificate in Entrepreneurship and Innovation',
-            link: 'https://www.purdue.edu'
+            link: 'https://www.cs.purdue.edu'
         },
     ]
 
@@ -193,25 +193,24 @@ export default function Career() {
                 title="My career so far."
                 intro="All my professional experiences and education so far, in chronological order. If you're curious, you can click on an entry to go to the organization's website."
             >
-            </SimpleLayout>
-            
-            {/* Experience Section */}
-            <div className='animate__animated animate__fadeInUp'>
-                <Container className="mt-12 md:mt-14">
-                    <div className="mx-auto max-w-xl lg:max-w-none space-y-10">
-                        <Experience />
-                    </div>
-                </Container>
-            </div>
+                {/* Experience Section */}
+                <div className='animate__animated animate__fadeInUp'>
+                    <Container className="mt-12 md:mt-14">
+                        <div className="mx-auto max-w-xl lg:max-w-none space-y-10">
+                            <Experience />
+                        </div>
+                    </Container>
+                </div>
 
-            {/* Education Section */}
-            <div className='animate__animated animate__fadeInUp'>
-                <Container className="mt-12 md:mt-14">
-                    <div className="mx-auto max-w-xl lg:max-w-none space-y-10">
-                        <Education />
-                    </div>
-                </Container>
-            </div>
+                {/* Education Section */}
+                <div className='animate__animated animate__fadeInUp'>
+                    <Container className="mt-12 md:mt-14">
+                        <div className="mx-auto max-w-xl lg:max-w-none space-y-10">
+                            <Education />
+                        </div>
+                    </Container>
+                </div>
+            </SimpleLayout>
         </>
     )
 }

@@ -137,9 +137,28 @@ Card.DescriptionList = function CardDescriptionList({
     items: string[]
 }) {
     return (
+        <ul className="relative z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-400 space-y-2">
+            {items.map((item, index) => (
+                <li key={index} className="" style={{ lineHeight: '1.2' }}>
+                    {item}
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+/**
+ * Description list of a card with bullet points.
+ */
+Card.DescriptionBulletList = function CardDescriptionBulletList({
+    items,
+}: {
+    items: string[]
+}) {
+    return (
         <ul className="relative z-10 mt-2 ml-4 list-disc text-sm text-zinc-600 dark:text-zinc-400 space-y-2">
             {items.map((item, index) => (
-                <li key={index} className="pl-2" style={{ lineHeight: '1.2' }}>
+                <li key={index} className="pl-0" style={{ lineHeight: '1.2' }}>
                     {item}
                 </li>
             ))}

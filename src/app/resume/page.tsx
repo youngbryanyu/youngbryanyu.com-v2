@@ -64,7 +64,7 @@ export default function Resume() {
         >
             {/* Experience title */}
             <h2 className="flex font-semibold text-zinc-900 dark:text-zinc-100">
-                <span className="text-2xl mb-5 ml-5">Experience</span>
+                <span className="text-2xl mb-5 ml-5 animate__animated animate__fadeInUp">Experience</span>
             </h2>
 
             {/* Experience list */}
@@ -83,7 +83,7 @@ export default function Resume() {
 
             {/* Education title */}
             <h2 className="flex font-semibold text-zinc-900 dark:text-zinc-100">
-                <span className="text-2xl mb-5 ml-5">Education</span>
+                <span className="text-2xl mb-5 ml-5 animate__animated animate__fadeInUp">Education</span>
             </h2>
 
             {/* Education list */}

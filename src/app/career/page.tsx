@@ -166,7 +166,7 @@ function Education() {
             title: 'BS, Computer Science',
             logo: purdueLogo,
             time: '2020 - 2023',
-            description: 'Certificate in Entrepreneurship and Innovation',
+            description: 'Entrepreneurship Student Ambassador',
             link: 'https://www.cs.purdue.edu'
         },
     ]

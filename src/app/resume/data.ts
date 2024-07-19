@@ -29,6 +29,7 @@ export const experiences: Position[] = [
             "Created a tool to simplify building, running, pruning, and management of Dockerized services locally, which significantly boosted developer productivity.",
             "Developed an interactive console for users to manage their accounts, and a dashboard for users to view their database cluster metrics.",
             "Designed the schema for the PostgreSQL database, utilizing indexes to optimize for read queries. Leveraged TimescaleDB to efficiently index and partition time-series data. Implemented keyset pagination on paginated queries for efficiency.",
+            "Created and maintained internal developer documentation and external documentation for developers using our service.",
             "Technologies: AWS, Bash, Cassandra, Cloudflare, Docker, Docker Swarm mode, DNS, EC2, FastAPI, Fastify, GCP, Git, GitHub Actions, Grafana, HTTP, IAM, Linux, Next.js, Node.js, Nginx, Python, PostgreSQL, Prometheus, React, Redis, REST APIs, SSL/TLS, TimescaleDB, TypeScript",
         ],
         date: "May 2024 - Present",

@@ -4,7 +4,7 @@ import { SimpleLayoutWithLinks } from '@/components/SimpleLayoutWithLinks'
 import { LinkedTextTeal } from '@/components/Links'
 import { experiences, educations, Position } from '@/app/resume/data'
 
-const RESUME_PDF_URL = "https://drive.google.com/file/d/1iyN0DROATl6nAhE_lgHLd0I2WAJcQ5Pa/view?usp=sharing"
+const RESUME_PDF_URL = "https://drive.google.com/file/d/1n55ZEEF6UKHZorFMm3ozEI5GUDVBUYaY/view?usp=sharing"
 
 /**
  * A position component.

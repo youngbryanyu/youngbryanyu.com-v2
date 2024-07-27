@@ -31,7 +31,7 @@ export const experiences: Position[] = [
             "Developed a web console for users to manage their accounts, connect their database clusters to our service, manage API keys, and view their database cluster metrics. Used Auth.js for web authentication and integrated OAuth for third-party logins with Google and GitHub.",
             "Designed the schema for the PostgreSQL database, utilizing indexes to optimize for read queries. Leveraged TimescaleDB to efficiently index and partition time-series data. Implemented keyset pagination on paginated queries for efficiency.",
             "Developed a dashboard for administrators to manage user accounts, which includes managing access permissions, monitoring user activity, and performing account-level operations (e.g. deactivation, reactivation, etc).",
-            "Technologies: Ansible, AWS, Bash, Cassandra, Cloudflare, Docker, Docker Swarm mode, DNS, EC2, FastAPI, Fastify, GCP, Git, GitHub Actions, Grafana, HTTP, IAM, Linux, Next.js, Node.js, Nginx, Python, PostgreSQL, Prometheus, React, Redis, REST APIs, SSL/TLS, TimescaleDB, TypeScript",
+            "Technologies: Ansible, Auth.js, AWS, Bash, Cassandra, Cloudflare, Docker, Docker Swarm mode, DNS, EC2, FastAPI, Fastify, GCP, Git, GitHub Actions, Grafana, HTTP, IAM, Linux, Next.js, Node.js, Nginx, Python, PostgreSQL, Prometheus, React, Redis, REST APIs, SSL/TLS, TimescaleDB, TypeScript",
         ],
         date: "May 2024 - Present",
     },

@@ -27,7 +27,7 @@ export const experiences: Position[] = [
             "Developed idempotent Ansible playbooks for installing dependencies, configuring network settings, deploying application updates, and managing Docker Swarm mode clusters on host machines. Ensured seamless cluster management by automating node operations (e.g., scaling up/down, promotion/demotion, labeling) based on inventory file changes.",
             "Set up monitoring with Prometheus and Grafana to track the performance metrics and health of all backend and infrastructure services. Set up alerts for when services reached an unhealthy state.",
             "Created a scheduled job to regularly aggregate and archive old time-series trace data collected from database clusters.",
-            "Created a tool to simplify building, running, pruning, and management of Dockerized services locally, which significantly boosted developer productivity.",
+            "Created a tool to simplify building, running, pruning, and management of containerized services locally, which significantly boosted developer productivity.",
             "Developed a web console for users to manage their accounts, connect their database clusters to our service, manage API keys, and view their database cluster metrics.",
             "Designed the schema for the PostgreSQL database, utilizing indexes to optimize for read queries. Leveraged TimescaleDB to efficiently index and partition time-series data. Implemented keyset pagination on paginated queries for efficiency.",
             "Developed a dashboard for administrators to manage user accounts, which includes managing access permissions, monitoring user activity, and performing account-level operations (e.g. deactivation, reactivation, etc).",

@@ -15,8 +15,18 @@ export interface Position {
  */
 export const experiences: Position[] = [
     {
+        href: "https://www.cs.purdue.edu/",
+        title: "Graduate Teaching Assistant",
+        organization: "Purdue University",
+        summaryList: ["Courses:"],
+        descriptionList: [
+            "CS 180: Problem Solving and Object-Oriented Programming",
+        ],
+        date: "Aug 2024 - Present",
+    },
+    {
         href: "https://www.linkedin.com/company/stealth-startup-51/",
-        title: "Software Engineer",
+        title: "Software Engineer Intern",
         organization: "Stealth Startup",
         summaryList: ["Building an automated NoSQL database tuning service to maximize performance and minimize cost with no downtime"],
         descriptionList: [

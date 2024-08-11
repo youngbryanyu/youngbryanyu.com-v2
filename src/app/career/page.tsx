@@ -107,6 +107,14 @@ function Role({ role }: { role: Role }) {
 function Experience() {
     let resume: Array<Role> = [
         {
+            company: 'Purdue University',
+            title: 'Graduate Teaching Assistant',
+            logo: purdueLogo,
+            time: 'Fall 2024',
+            description: 'CS 180: Problem Solving and Object-Oriented Programming',
+            link: 'https://www.cs.purdue.edu'
+        },
+        {
             company: 'Stealth Startup',
             // company: 'KeyByte LLC',
             title: 'Software Engineer',

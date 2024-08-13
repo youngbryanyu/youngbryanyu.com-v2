@@ -84,8 +84,8 @@ export const educations: Position[] = [
         summaryList: ["Coursework:"],
         descriptionList: [
             "CS 536: Data Communication And Computer Networks",
-            "CS 573: Data Mining",
-            "CS 593-MLT: Machine Learning Theory",
+            "CS 541: Database Systems",
+            "CS 573: Data Mining"
         ],
         date: "Aug 2024 - May 2026",
     },

@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Link from 'next/link'
 
-import keybyteLogo from '@/images/career/keybyte.png'
+import doordashLogo from '@/images/career/doordash.jpg'
 import stealthLogo from '@/images/career/stealth.jpg'
 import amazonLogo from '@/images/career/amazon.jpg'
 import purdueLogo from '@/images/career/purdue.jpg'
@@ -107,12 +107,12 @@ function Role({ role }: { role: Role }) {
 function Experience() {
     let resume: Array<Role> = [
         {
-            company: 'Purdue University',
-            title: 'Graduate Teaching Assistant',
-            logo: purdueLogo,
-            time: 'Fall 2024',
-            description: 'CS 180: Problem Solving and Object-Oriented Programming',
-            link: 'https://www.cs.purdue.edu'
+            company: 'DoorDash',
+            title: 'Software Engineer',
+            logo: doordashLogo,
+            time: '2024 - Present',
+            description: 'Marketplace',
+            link: 'https://www.doordash.com/'
         },
         {
             company: 'Stealth Startup',

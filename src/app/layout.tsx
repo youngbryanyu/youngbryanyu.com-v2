@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         default: "Young Bryan Yu",
     },
     /* This is the description under the title on search */
-    description: `I'm Young, a software engineer based in Silicon Valley who is interested in big data, distributed systems, databases, and cloud computing. I'm currently pursuing a MS in Computer Science at Purdue University. I'm currently working at a stealth-mode startup on some cutting edge database and VM tuning technologies.`,
+    description: `I'm Young, a software engineer based in Silicon Valley who is interested in big data, distributed systems, databases, and cloud computing. I'm currently working at DoorDash.`,
     keywords: [
         /* Name */
         'Young Bryan Yu',

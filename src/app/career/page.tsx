@@ -117,7 +117,7 @@ function Experience() {
         {
             company: 'Stealth Startup',
             // company: 'KeyByte LLC',
-            title: 'Software Engineer',
+            title: 'Software Engineer Intern',
             logo: stealthLogo,
             // logo: keybyteLogo
             time: 'Summer 2024',

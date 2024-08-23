@@ -164,13 +164,6 @@ function Education() {
     let resume: Array<Role> = [
         {
             company: 'Purdue University',
-            title: 'MS, Computer Science',
-            logo: purdueLogo,
-            time: '2024 - 2026',
-            link: 'https://www.cs.purdue.edu'
-        },
-        {
-            company: 'Purdue University',
             title: 'BS, Computer Science',
             logo: purdueLogo,
             time: '2020 - 2023',

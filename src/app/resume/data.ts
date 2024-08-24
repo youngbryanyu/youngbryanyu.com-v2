@@ -94,7 +94,7 @@ export const educations: Position[] = [
         title: "BS, Computer Science",
         organization: "Purdue University",
         summaryList: [
-            "Entrepreneurship Student Ambassador",
+            "Entrepreneurship Student Ambassador, Certificate in Entrepreneurship and Innovation",
             "Coursework:"
         ],
         descriptionList: [

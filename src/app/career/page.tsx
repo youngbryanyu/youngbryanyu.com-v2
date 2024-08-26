@@ -121,7 +121,7 @@ function Experience() {
             logo: stealthLogo,
             // logo: keybyteLogo
             time: 'Summer 2024',
-            description: 'Building the MVP',
+            description: 'Building an automated NoSQL database tuning service',
             link: 'https://www.linkedin.com/company/stealth-startup-51/'
             // link: 'https://www.keybyte.xyz'
         },

@@ -28,7 +28,7 @@ export const experiences: Position[] = [
         href: "https://www.linkedin.com/company/stealth-startup-51/",
         title: "Software Engineer Intern",
         organization: "Stealth Startup",
-        summaryList: ["Building an automated NoSQL database tuning service to maximize performance and minimize cost with no downtime"],
+        summaryList: ["Building an automated NoSQL database tuning service"],
         descriptionList: [
             "Developed and maintained several containerized microservices and REST APIs essential to the service's core functionality. Played a pivotal role in delivering the minimum viable product (MVP) over a 12 week time window. Created and maintained internal developer documentation and external customer documentation.",
             "Led the design and development of a backend orchestration service to process trace data from database clusters, predict future workload patterns, determine optimal cluster configurations, and dynamically apply database/VM reconfigurations to database clusters running on EC2 with no downtime. Decoupled scheduling and execution of reconfigurations using a Redis queue, handled I/O-bound tasks asynchronously, and used micro batch processing to maximize throughput.",
@@ -43,7 +43,7 @@ export const experiences: Position[] = [
             "Developed a dashboard for administrators to manage user accounts, which includes managing access permissions, monitoring user activity, and performing account-level operations (e.g. deactivation, reactivation, etc).",
             "Technologies: Ansible, Auth.js, AWS, Bash, Cassandra, Cloudflare, Docker, Docker Swarm mode, DNS, EC2, FastAPI, Fastify, GCP, Git, GitHub Actions, Grafana, HTTP, IAM, Linux, Next.js, Node.js, Nginx, OAuth, Python, PostgreSQL, Prometheus, React, Redis, REST APIs, SSL/TLS, TimescaleDB, TypeScript",
         ],
-        date: "May 2024 - Present",
+        date: "May 2024 - Aug 2024",
     },
     {
         href: "https://www.amazon.com",

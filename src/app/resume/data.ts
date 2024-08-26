@@ -77,18 +77,18 @@ export const experiences: Position[] = [
  * Educations.
  */
 export const educations: Position[] = [
-    {
-        href: "https://www.cs.purdue.edu/",
-        title: "MS, Computer Science",
-        organization: "Purdue University",
-        summaryList: ["Coursework:"],
-        descriptionList: [
-            "CS 536: Data Communication And Computer Networks",
-            "CS 541: Database Systems",
-            "CS 573: Data Mining"
-        ],
-        date: "Aug 2024 - May 2026",
-    },
+    // {
+    //     href: "https://www.cs.purdue.edu/",
+    //     title: "MS, Computer Science",
+    //     organization: "Purdue University",
+    //     summaryList: ["Coursework:"],
+    //     descriptionList: [
+    //         "CS 536: Data Communication And Computer Networks",
+    //         "CS 541: Database Systems",
+    //         "CS 573: Data Mining"
+    //     ],
+    //     date: "Aug 2024 - May 2026",
+    // },
     {
         href: "https://www.cs.purdue.edu/",
         title: "BS, Computer Science",

@@ -53,7 +53,7 @@ export const experiences: Position[] = [
         descriptionList: [
             "Designed and developed a backend service to automate data cleaning data across multiple databases through a decoupled event-driven orchestration workflow, resulting in a 99.97% increase in data cleaning speed, data quality improvement, and better recipe recommendations. Implemented the service's infrastructure (with IaC), CI/CD pipeline, business logic, unit tests, monitoring, and documentation.",
             "Migrated the team's AWS CDK utility library from the deprecated AWS CDK v1 to the latest AWS CDK v2, ensuring the utility library was up to date with AWS CDK v2 while maintaining continued support for existing services using AWS CDK v1.",
-            "Technologies: AWS, CloudFormation, CloudWatch, DynamoDB, Elasticsearch, Git, Gradle, IAM, Java, Kibana, Lambda, Node.js, S3, SQS, Step Functions, TypeScript"
+            "Technologies: AWS, CloudFormation, CloudWatch, DynamoDB, Elasticsearch, Git, Gradle, IAM, Java, Jest, JUnit, Kibana, Lambda, Mockito, Node.js, S3, SQS, Step Functions, TypeScript"
         ],
         date: "May 2023 - Aug 2023",
     },
@@ -67,7 +67,7 @@ export const experiences: Position[] = [
             "Fixed major bugs across several distributed backend services that caused incorrect aggregation of recipe search results from search filters and the display of irrelevant filters matching 0 search results, improving the relevance and accuracy of search filters.",
             "Implemented optimizations for the recipe recommendation system by adjusting recipe ranking based on image availability and refining Elasticsearch relevance score calculations.",
             "Utilized A/B testing to evaluate the impact of code changes while ensuring seamless rollout across different marketplaces and locales.",
-            "Technologies: AWS, DynamoDB, Elasticsearch, Git, IAM, Java, Kibana, Lambda, S3",
+            "Technologies: AWS, DynamoDB, Elasticsearch, Git, IAM, Java, JUnit, Kibana, Lambda, Mockito, S3, TestNG",
         ],
         date: "May 2022 - Aug 2022",
     }

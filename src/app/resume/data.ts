@@ -18,7 +18,7 @@ export const experiences: Position[] = [
         href: "https://www.doordash.com/",
         title: "Software Engineer",
         organization: "DoorDash",
-        summaryList: ["Marketplace"],
+        summaryList: ["Search Experience"],
         descriptionList: [
             
         ],

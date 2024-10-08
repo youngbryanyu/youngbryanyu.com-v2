@@ -111,7 +111,7 @@ function Experience() {
             title: 'Software Engineer',
             logo: doordashLogo,
             time: '2024 - Present',
-            description: 'Marketplace',
+            description: 'Search Experience',
             link: 'https://www.doordash.com/'
         },
         {

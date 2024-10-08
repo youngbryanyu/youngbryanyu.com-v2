@@ -6,7 +6,8 @@ import { Container } from '@/components/Container'
 import { EmailIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import sedona from '@/images/home/sedona.jpg'
 import photography from '@/images/home/photography.jpg'
-import alviso from '@/images/home/alviso.jpg'
+// import alviso from '@/images/home/alviso.jpg'
+import chicago from '@/images/home/chicago.jpg'
 import oregon from '@/images/home/oregon.jpg'
 import seattle from '@/images/home/seattle.jpg'
 import React from 'react'
@@ -18,9 +19,10 @@ import { LinkedText } from '@/components/Links'
  * List of images
  */
 const images = [
-    { src: alviso, alt: 'Alviso' },
+    
     { src: seattle, alt: 'Seattle' },
     { src: sedona, alt: 'Sedona' },
+    { src: chicago, alt: 'Chicago' },
     { src: photography, alt: 'Photography' },
     { src: oregon, alt: 'Oregon' },
 ];

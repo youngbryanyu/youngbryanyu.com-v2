@@ -114,17 +114,17 @@ function Experience() {
             description: 'Search Experience',
             link: 'https://www.doordash.com/'
         },
-        {
-            company: 'Stealth Startup',
-            // company: 'KeyByte LLC',
-            title: 'Software Engineer Intern',
-            logo: stealthLogo,
-            // logo: keybyteLogo
-            time: 'Summer 2024',
-            description: 'Building an automated NoSQL database tuning service',
-            link: 'https://www.linkedin.com/company/stealth-startup-51/'
-            // link: 'https://www.keybyte.xyz'
-        },
+        // {
+        //     company: 'Stealth Startup',
+        //     // company: 'KeyByte LLC',
+        //     title: 'Software Engineer Intern',
+        //     logo: stealthLogo,
+        //     // logo: keybyteLogo
+        //     time: 'Summer 2024',
+        //     description: 'Building an automated NoSQL database tuning service',
+        //     link: 'https://www.linkedin.com/company/stealth-startup-51/'
+        //     // link: 'https://www.keybyte.xyz'
+        // },
         {
             company: 'Amazon',
             title: 'Software Development Engineer Intern',
@@ -167,7 +167,8 @@ function Education() {
             title: 'BS, Computer Science',
             logo: purdueLogo,
             time: '2020 - 2023',
-            description: 'Entrepreneurship Student Ambassador, Certificate in Entrepreneurship and Innovation',
+            // description: 'Entrepreneurship Student Ambassador, Certificate in Entrepreneurship and Innovation',
+            description: "GPA: 3.9/4.0",
             link: 'https://www.cs.purdue.edu'
         },
     ]

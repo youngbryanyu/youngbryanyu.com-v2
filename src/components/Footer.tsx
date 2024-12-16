@@ -36,8 +36,8 @@ export function Footer() {
                                 <NavLink href="/">Home</NavLink>
                                 <NavLink href="/about">About</NavLink>
                                 <NavLink href="/career">Career</NavLink>
-                                <NavLink href="/resume">Resume</NavLink>
-                                <NavLink href="/projects">Projects</NavLink>
+                                {/* <NavLink href="/resume">Resume</NavLink> */}
+                                {/* <NavLink href="/projects">Projects</NavLink> */}
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
                                 &copy; {new Date().getFullYear()} Young Bryan Yu. All rights

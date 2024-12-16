@@ -19,7 +19,7 @@ import { LinkedText } from '@/components/Links'
  * List of images
  */
 const images = [
-    
+
     { src: seattle, alt: 'Seattle' },
     { src: sedona, alt: 'Sedona' },
     { src: chicago, alt: 'Chicago' },
@@ -113,7 +113,7 @@ export default function Home() {
                     {/* Introduction */}
                     <div className='animate__animated animate__fadeInUp'>
                         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                            I&apos;m Young, a software engineer based in Silicon Valley who is interested in big data, distributed systems, databases, and cloud computing. I&apos;m currently working at {LinkedText({ text: "DoorDash", link: "https://www.doordash.com/", })}. 
+                            I&apos;m Young, a software engineer based in Silicon Valley who is interested in big data, distributed systems, databases, and cloud computing. I&apos;m currently building search at {LinkedText({ text: "DoorDash", link: "https://www.doordash.com/" })}.
                         </p>
                     </div>
 

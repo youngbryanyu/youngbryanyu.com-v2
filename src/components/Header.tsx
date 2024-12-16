@@ -134,8 +134,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="/about">About</NavItem>
                 <NavItem href="/career">Career</NavItem>
-                <NavItem href="/resume">Resume</NavItem>
-                <NavItem href="/projects">Projects</NavItem>
+                {/* <NavItem href="/resume">Resume</NavItem> */}
+                {/* <NavItem href="/projects">Projects</NavItem> */}
             </ul>
         </nav>
     )

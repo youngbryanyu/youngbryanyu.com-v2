@@ -81,8 +81,8 @@ function MobileNavigation(
                                 <MobileNavItem href="/">Home</MobileNavItem>
                                 <MobileNavItem href="/about">About</MobileNavItem>
                                 <MobileNavItem href="/career">Career</MobileNavItem>
-                                <MobileNavItem href="/resume">Resume</MobileNavItem>
-                                <MobileNavItem href="/projects">Projects</MobileNavItem>
+                                {/* <MobileNavItem href="/resume">Resume</MobileNavItem> */}
+                                {/* <MobileNavItem href="/projects">Projects</MobileNavItem> */}
                             </ul>
                         </nav>
                     </Popover.Panel>
